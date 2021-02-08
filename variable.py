@@ -6,7 +6,7 @@ is_adult = age >= 3 # age가 3보다 크거나 같으면 boolean 형으로 is_ad
 
 print("우리집" + animal + "의 이름은" + name + "예요")
 print(name + "는 " + str(age) + "살이며," + hobbit + "을 아주 좋아해요") 
-#age와 같은 정수를 print문에 출력시 str()로 변형
+# age와 같은 정수를 print문에 출력시 str()로 변형
 print(name, "는 ", age, "살이며, ", hobbit, "을 아주 좋아해요")
 # + 대신 , 사용 가능 but, 공백 한개를 포함
 print(name + "는 어른일까요? : " + str(is_adult))
