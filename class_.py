@@ -57,6 +57,21 @@ class FlyableAttackUnit(AttackUnit, Flyable): # # 다중 상속 : 부모 클래�
         print("[공중 유닛 이동]")
         self.fly(self.name, location)
 
+class BuildingUnit(Unit):
+    def __init__(self, name, hp, location):
+        # Unit.__init__(self, name, hp, 0)
+        super().__init__(name, hp, 0) # super() 는 상속받는 클래스에 대해 초기화 / 다중상속 시 앞에 오는 클래스만 상속
+        self.location = location
+
+supply_depot = BuildingUnit("서플라이 디폿", 500, "7시")
+def game_start():
+    print("[새로운 게임을 시작합니다]")
+
+def game_over():
+    pass  # 미완성인 경우 pass 를 이용하여 완성된 것처럼 작동
+game_start()
+game_over()
+
 valkyrie = FlyableAttackUnit("발키리", 200, 6, 5)
 valkyrie.fly(valkyrie.name, "3시")
 
