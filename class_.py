@@ -1,5 +1,5 @@
 class Unit:
-
+    
     def setData(self, name, hp, speed):
         self.name = name
         self.hp = hp
@@ -14,7 +14,7 @@ class Unit:
         print("[체력 : {0}] 의 {1} 유닛이 생성 되었습니다.".format(self.hp, self.name))
 
     def information(self, name, hp):
-        print("체력 : {0}, 공격력 : {1}".format(self.hp, self.damage))
+        print("이름 : {0}, 체력 : {1}".format(self.name, self.hp))
 
 class AttackUnit(Unit):  # Unit class의 내용을 상속 받음.
 

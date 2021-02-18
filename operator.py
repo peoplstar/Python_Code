@@ -22,12 +22,18 @@ print(pow(4,3)) # 4의 3 제곱
 print(max(41,63)) # 가장 큰 값 출력
 print(round(4.6)) # 반올림
 
-from math import * # math library 에 있는 모든 것을 활용하겠다.
+from math import floor # math library 에 있는 모든 것을 활용하겠다.
+from math import ceil # math library 에 있는 모든 것을 활용하겠다.
+from math import sqrt # math library 에 있는 모든 것을 활용하겠다.
+
 print(floor(4.99)) # 내림
 print(ceil(3.06)) # 올림
 print(sqrt(16)) # 제곱근
 
-from random import * # math library 에 있는 모든 것을 활용하겠다.
+from random import random # math library 에 있는 모든 것을 활용하겠다.
+from random import randrange # math library 에 있는 모든 것을 활용하겠다.
+from random import randint # math library 에 있는 모든 것을 활용하겠다.
+
 print(random()) # 0.0 ~ 1.0 미만의 임의의 값 생성
 print(random() * 10) # 0.0 ~ 10.0 미만의 임의의 값 생성
 print(int(random() * 45) + 1) # 1 ~ 45 이하의 임의의 정수값 생성

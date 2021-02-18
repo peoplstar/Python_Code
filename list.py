@@ -69,7 +69,9 @@ print(menu[1])
 # 커피 당첨자 : [2,3,4]
 # -- 축하합니다 --
 
-from random import *
+from random import randrange
+from random import shuffle
+from random import sample
 
 person = range(1,21) # 1 부터 21 미만까지 숫자 생성 class = 'range'
 person = list(person)

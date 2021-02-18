@@ -73,7 +73,7 @@ print(students)
 # 조건 1 : 운행 소요 시간은 5분 ~ 50분 사이의 난수
 # 조건 2 : 5분 ~ 15분의 소요시간 승객만 매칭
 
-from random import *
+from random import randrange
 
 cnt = 0
 check = "O"

@@ -33,20 +33,20 @@ profile("김태호", 25, "C언어")
 
 # 같은 나이 같은 수업 같은 학교.
 
-def profile(name, age = 17, main_lang = "파이썬"):
+def profile1(name, age = 17, main_lang = "파이썬"):
     print("이름 : {0}\t 나이 : {1}\t 주 사용 언어 : {2}".format(name,age,main_lang))
 
-profile("박명수") # 인자를 기본으로 설정하여 이름만 넘겨줘도 실행가능
+profile1("박명수") # 인자를 기본으로 설정하여 이름만 넘겨줘도 실행가능
 
 # 가변 인자 
-def profile(name, age, *main_lang): # *main_lang 시 인자를 여러 개 입력 받을 수 있음.
+def profile2(name, age, *main_lang): # *main_lang 시 인자를 여러 개 입력 받을 수 있음.
     print("이름 : {0}\t 나이 : {1}\t".format(name,age), end = " ") # end = " " 출력 시 줄바꿈을 이행하지 않음
     for lang in main_lang:
         print(lang, end = " ")
     print() # 줄바꿈
 
-profile("유재석", 20, "Python", "Java", "C", "C++", "C#")
-profile("김태호", 23, "KOtiln", "Swift")
+profile2("유재석", 20, "Python", "Java", "C", "C++", "C#")
+profile2("김태호", 23, "KOtiln", "Swift")
 
 # 지역변수 = [함수내에서만 이용가능 / 함수호출시 생성 함수호출 / 끝날 시 사라짐]
 # 전역변수 = [프로그램 어디에서도 호출 가능]
