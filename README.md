@@ -247,7 +247,7 @@ print("남은 총 : {0}".format(gun)) # 지역 변수 '10 출력'
 - **---- (1)** 에서 전역 변수로 사용하기 위해서는 `global gun`와 같이 변수 앞에 `global` 을 사용 
   
 ## - __02.13__ -
-> **<h3>File In & Ounput</h3>**
+> **<h3>Standard In & Ounput</h3>**
 ```python
 print("Python", "java", "C++", sep=",", end="?")  
 print("무엇이 더 재미있을까요?")
@@ -287,3 +287,26 @@ print("{0:-,}".format(1000000000))
 print("{0:f}".format(5/3))
 print("{0:.2f}".format(5/3)) # 소수 둘째자리까지 출력
 ```
+## - __02.13__ -
+> **<h3>File In & Ounput</h3>**
+```python
+score_file = open("score.txt","w",encoding="utf8") 
+print("수학 : 0", file=score_file)
+print("영어 : 50", file=score_file)
+score_file.close() # score.txt 파일이 생성되면서 print 해당 문자열이 텍스트파일안에 저장
+```
+```python
+score_file = open("score.txt", "a", encoding="utf8") 
+score_file.write("과학 : 80")
+score_file.write("\n코딩 : 100")
+score_file.close()
+```
+```python
+score_file = open("score.txt", "r", encoding="utf8")
+print(score_file.read()) # score.file을 읽어 한번에 출력
+score_file.close()
+```
+- 쓰기위한 목적 `W` , 읽기위한 목적 `R` , 덮어쓰기 `A` ,  `encondig="utf8"` 을 입력하지 않을시 한글 깨짐 현상
+  
+- `write()`를 사용할 시 줄바꿈을 포함하지 않는다.   
+ 따라서 `\n `포함시켜줘야함.
