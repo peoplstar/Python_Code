@@ -82,7 +82,93 @@ print(randrange(0,10)) # 0 ~ 10 미만의 임의의 값 생성
 print(randint(0,9)) # 0 ~ 9 이하의 임의의 값 생성
 ```
 
-|<img src="random_ex/int(random()).png" width="80%" height="100%" alt="int(random())"></img>|<img src="random_ex/randrange().png" width="85%" height="100%" alt="randrange()"></img>|<img src="random_ex/randint().png" width="90%" height="100%" alt="randint()"></img>|   
+|<img src="(https://user-images.githubusercontent.com/78135526/108602157-da2bb500-73e3-11eb-86f0-3f7029b5c935.PNG)
+" width="80%" height="100%" alt="int(random())"></img>|<img src="random_ex/randrange().png" width="85%" height="100%" alt="randrange()"></img>|<img src="random_ex/randint().png" width="90%" height="100%" alt="randint()"></img>|   
 |:---:|:---:|:---:|
 |`print(int(random() * 10))`|`print(randrange(0,10))`|`print(randint(0,9))`|
 
+## - __02.10__ -
+> **<h3>List</h3>**
+
+```python
+num_list = [10, 20, 30]
+subway = ["유재석", "조세호", "박명수"]
+empty = list() 
+empty = []
+subway[-1]
+```
+- List는 인덱스를 지닌 배열과 동일
+- 인덱스 -1 인 경우는 가장 마지막 인덱스에 접근
+  
+> **<h3>List Function</h3>**
+```python
+subway.append("하하")
+subway.insert(1, "정형돈")
+num_list.sort()
+num_list.reverse()
+del num_list[2]
+num_list.index(5)
+```
+`.append("temp")` : temp 값을 마지막 인덱스에 추가   
+`.insert(1,"temp")` : 인덱스 1 인 위치에 temp 값 대입 <mark> &</mark> 그 이후 값은 모두 한자리씩 밀려남   
+`.sort()` : 오름차순으로 정렬   
+`.reverse()` : 리스트의 내부를 역순으로 뒤집음 
+`del num_list[2]` : 인덱스가 2인 부분의 값을 삭제   
+`.index(5)` : 리스트에 해당 값이 있으면 위치 값을 출력 <mark>&</mark> 없으면 ValueError
+
+> **<h3> Dictionary</h3>** 
+```python
+cabinet = {3:"유재석", 100:"김태호"}
+dic = {'name':'pey', 'phone':'0119993323', 'birth': '1118'}
+cabinet["A-3"] = "마우스"
+cabinet["C-23"] = "패드"
+```
+- `{key : "value"}` 의 형식으로 key와 value를 쌍 형태
+- Dictionary 에서 key는 고유한 값이기에 중복될 수 없다.
+- Key의 값은 변하면 안되기에 Key에는 List를 사용 할 수 없지만     
+Tuple은 사용 가능하다.
+
+####   **- Dictionary Key**
+```python
+print(cabinet[3]) # 만약 키값이 유효하지 않을 때 오류발생
+print(cabinet.get(3)) # 만약 키값이 유효하지 않을 때 None 출력
+print(cabinet.get(5, "사용 가능")) # None 대신 오류 값을 변경
+print(3 in cabinet) # 3 이라는 값이 cabinet 에 있으면 True 없으면 False
+```
+
+## - __02.11__ -
+> **<h3>Conditional</h3>**
+```python
+weather = input("오늘 날씨는 어때요? : ") 
+temp = int(input("기온은 어때요? : "))
+    print("우산을 챙기세요")
+elif weather == "미세먼지": # else if
+    print("마스크를 챙기세요")
+else:
+    print("준비물 필요 없어요")  
+
+if 30 <= temp:
+    print("너무 더워요")
+elif 10 <= temp and temp < 30:
+    print("따뜻해요")
+elif 0 <= temp < 10:
+    print("외투를 챙기세요")
+else: 
+    print("많이 추워요")
+```
+- `and` = `&`  &nbsp;&nbsp;,&nbsp;&nbsp;  `or` = `|`
+- input은 항상 문자열 `[` scanf , cin << `]` 와 유사 
+- 항상 문자열로 받기에 `int(input())`로 형변환이 필요
+
+```python
+for waiting_number in [0, 1, 2, 3, 4]:
+    print("대기번호 : {0}".format(waiting_number))
+
+for waiting_number in range(0, 5): 
+    print("대기번호 : {0}".format(waiting_number))
+
+    starbucks = ["아이언맨", "토르", "그루트"]
+for customer in starbucks:
+    print("{0}손님, 커피가 준비되었습니다.".format(customer))
+
+```
