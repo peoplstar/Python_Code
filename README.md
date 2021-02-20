@@ -82,7 +82,7 @@ print(randrange(0,10)) # 0 ~ 10 미만의 임의의 값 생성
 print(randint(0,9)) # 0 ~ 9 이하의 임의의 값 생성
 ```
 
-|<img src="![int(random())](https://user-images.githubusercontent.com/78135526/108602221-4c03fe80-73e4-11eb-8ba1-4c4153e112a9.PNG)" width="80%" height="100%" alt="int(random())"></img>|<img src="![randrange()](https://user-images.githubusercontent.com/78135526/108602313-b2891c80-73e4-11eb-93c8-e6ffa74a5e96.PNG)" width="85%" height="100%" alt="randrange()"></img>|<img src="![randint()](https://user-images.githubusercontent.com/78135526/108602325-bddc4800-73e4-11eb-8634-f07bdcdbd902.PNG)" width="90%" height="100%" alt="randint()"></img>|   
+|<img src="random_ex/int(random()).png" width="80%" height="100%" alt="int(random())"></img>|<img src="random_ex/randrange().png" width="85%" height="100%" alt="randrange()"></img>|<img src="random_ex/randint().png" width="90%" height="100%" alt="randint()"></img>|   
 |:---:|:---:|:---:|
 |`print(int(random() * 10))`|`print(randrange(0,10))`|`print(randint(0,9))`|
 
@@ -171,3 +171,5 @@ for customer in starbucks:
     print("{0}손님, 커피가 준비되었습니다.".format(customer))
 
 ```
+
+<img src = "test.PNG">
