@@ -159,6 +159,7 @@ else:
 - input은 항상 문자열 `[` scanf , cin << `]` 와 유사 
 - 항상 문자열로 받기에 `int(input())`로 형변환이 필요
 
+####   **- For 반복문**
 ```python
 for waiting_number in [0, 1, 2, 3, 4]:
     print("대기번호 : {0}".format(waiting_number))
@@ -169,7 +170,78 @@ for waiting_number in range(0, 5):
     starbucks = ["아이언맨", "토르", "그루트"]
 for customer in starbucks:
     print("{0}손님, 커피가 준비되었습니다.".format(customer))
-
 ```
+####   **- While 반복문**
+```python
+customer = "토르"
+index = 5
+while index >= 1: 
+    print("{0}, 커피가 준비 되었습니다. {1}번 남았아요.".format(customer,index))
+    index -= 1
+    if index == 0:
+        print("커피는 폐기처분되었습니다.")
 
-<img src = "test.PNG">
+# continue, break
+absent = [2, 5] 
+no_book = [7]
+for student in range(1, 11):
+    if student in absent: # student가 absent 에 포함 되어있다면
+        continue 
+    elif student in no_book:
+        print("오늘 수업 여기까지. {0}는 교무실로".format(student))
+        break
+    print("{0}, 책 읽어봐.".format(student))
+print("\n\n")
+```
+- `while ()` 내부 조건식이 False 일때 반복 종료
+- `continue`  다음 반복으로 건너뜀
+- `break` 반복문 종료
+
+## - __02.12__ -
+> **<h3>Function</h3>**
+```python
+# 기본값 설정
+
+def profile(name, age, main_lang):
+    print("이름 : {0}\t 나이 : {1}\t 주 사용 언어 : {2}".format(name, age, main_lang))
+
+profile("유재석", 20, "파이썬")
+profile("김태호", 25, "C언어")
+```
+```python
+# 같은 나이 같은 수업 같은 학교.
+
+def profile1(name, age = 17, main_lang = "파이썬"):
+    print("이름 : {0}\t 나이 : {1}\t 주 사용 언어 : {2}".format(name, age, main_lang))
+
+profile1("박명수")
+```
+- 인자를 기본으로 설정하여 이름만 넘겨줘도 실행가능
+```python
+# 가변 인자 
+def profile2(name, age, *main_lang): 
+    print("이름 : {0}\t 나이 : {1}\t".format(name, age), end = " ") # end = " " 출력 시 줄바꿈을 이행하지 않음
+    for lang in main_lang:
+        print(lang, end = " ")
+    print() # 줄바꿈
+
+profile2("유재석", 20, "Python", "Java", "C", "C++", "C#")
+profile2("김태호", 23, "KOtiln", "Swift")
+```
+- `*main_lang` 시 인자를 여러 개 입력 받을 수 있음
+------
+```python
+gun = 10 # 전역 변수
+
+def checkprint(soldiers): # 경계근무
+    gun = 20 # ------(1)
+    gun = gun - soldiers # 지역 변수
+    print("[함수 내] 남은 총 : {0}".format(gun))
+
+print("전체 총 : {0}".format(gun)) # 지역 변수 '10 출력'
+checkprint(2) # 2명이 경계 근무 나감 '18' 출력
+print("남은 총 : {0}".format(gun)) # 지역 변수 '10 출력'
+```
+- **지역변수** = `[`함수 내에서만 이용가능 `/` 함수 호출 시 생성 함수호출 `/` 끝날 시 사라짐`]`
+- **전역변수** = `[`프로그램 어디에서도 호출 가능`]`
+- **---- (1)** 에서 전역 변수로 사용하기 위해서는 `global gun`와 같이 변수 앞에 `global` 을 사용 

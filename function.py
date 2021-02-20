@@ -58,9 +58,9 @@ def checkprint(soldiers): # 경계근무
     gun = gun - soldiers # 지역 변수
     print("[함수 내] 남은 총 : {0}".format(gun))
 
-print("전체 총 : {0}".format(gun)) # 지역 변수
-checkprint(2) # 2명이 경계 근무 나감
-print("남은 총 : {0}".format(gun)) # 지역 변수
+print("전체 총 : {0}".format(gun)) # 전역 변수
+checkprint(2) # 2명이 경계 근무 나감 | 지역 변수
+print("남은 총 : {0}".format(gun)) # 전역 변수
 
 # Quiz) 표준 체중을 구하는 프로그램
 
