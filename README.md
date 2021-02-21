@@ -82,6 +82,8 @@ print(randrange(0,10)) # 0 ~ 10 미만의 임의의 값 생성
 print(randint(0,9)) # 0 ~ 9 이하의 임의의 값 생성
 ```
 
+![..](./tree/main/random_ex/int(random()).png)
+
 |<img src="[random_ex]https://github.com/peoplstar/Python_Code/tree/main/random_ex/int(random()).png" width="80%" height="100%" alt="int(random())"></img>|<img src="random_ex/randrange().png" width="85%" height="100%" alt="randrange()"></img>|<img src="random_ex/randint().png" width="90%" height="100%" alt="randint()"></img>|   
 |:---:|:---:|:---:|
 |`print(int(random() * 10))`|`print(randrange(0,10))`|`print(randint(0,9))`|
