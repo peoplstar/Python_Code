@@ -330,7 +330,7 @@ score_file.close()
 ```
 - `print(line)`만 이용 할 시 한 줄 읽고 커서는 자동으로 다음 줄로 이동
 - 총 2번의 줄바꿈이 일어나게 되므로 `print(line, end="")` 로 출력 
-> **<h3>`with`</h3>**
+> **<h3>with 연산자</h3>**
 - 일반 입출력 시 `open()`,`close()` 두번에 걸쳐 실행
 - `with`연산자 이용시 `close()`문을 사용하지 않아 번거로움을 제거
 
@@ -342,3 +342,6 @@ with open("study.txt", "r", encoding="utf8") as study_file1:
     print(study_file1.read()) 
 ```
 - `as study_file` : 불러온 `study.txt` 파일내용을 변수 `study_file`에 임시 저장
+
+## - __02.18__ -
+> **<h3>Class</h3>**
