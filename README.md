@@ -287,8 +287,8 @@ print("{0:-,}".format(1000000000))
 print("{0:f}".format(5/3))
 print("{0:.2f}".format(5/3)) # 소수 둘째자리까지 출력
 ```
-## - __02.13__ -
-> **<h3>File In & Ounput</h3>**
+## - __02.16__ -
+> **<h3>File Input</h3>**
 ```python
 score_file = open("score.txt","w",encoding="utf8") 
 print("수학 : 0", file=score_file)
@@ -310,3 +310,35 @@ score_file.close()
   
 - `write()`를 사용할 시 줄바꿈을 포함하지 않는다.   
  따라서 `\n `포함시켜줘야함.
+
+> **<h3>File Output</h3>**
+```python
+score_file = open("score.txt", "r", encoding="utf8")
+while True:
+    line = score_file.readline()
+    if not line: # 읽어오는 내용이 없으면
+        break
+    print(line, end="")
+score_file.close()
+```
+```python
+score_file = open("score.txt", "r", encoding="utf8")
+lines = score_file.readlines() # 모든 line을 읽어서 list 형태로 저장
+for line in lines:
+    print(line, end="")
+score_file.close()
+```
+- `print(line)`만 이용 할 시 한 줄 읽고 커서는 자동으로 다음 줄로 이동
+- 총 2번의 줄바꿈이 일어나게 되므로 `print(line, end="")` 로 출력 
+> **<h3>`with`</h3>**
+- 일반 입출력 시 `open()`,`close()` 두번에 걸쳐 실행
+- `with`연산자 이용시 `close()`문을 사용하지 않아 번거로움을 제거
+
+```python
+with open("study.txt", "w", encoding="utf8") as study_file: 
+    study_file.write("Python을 공부합니다.")
+
+with open("study.txt", "r", encoding="utf8") as study_file1:
+    print(study_file1.read()) 
+```
+- `as study_file` : 불러온 `study.txt` 파일내용을 변수 `study_file`에 임시 저장
