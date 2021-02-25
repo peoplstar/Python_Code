@@ -101,3 +101,30 @@ wraith2 = FlyableAttackUnit("클로킹 레이스", 80, 5, 7)
 wraith2.clocking = True
 if wraith2.clocking == True: # 객체에 함수를 외부에서 생성가능 \ 확장한 함수는 해당 객체에만 사용가능
     print("{0} 는 클로킹 상태입니다.".format(wraith2.name))
+
+# Quiz) 주어진 코드를 이용해 부동산 프로그램 작성
+# 출력 예제
+# 총 3대의 매물이 있습니다.
+# 강남 아파트 매매 10억 2010년
+# 마포 오피스텔 전세 5억 2007년
+# 송파 빌라 월세 500/20 2000년
+
+class House:
+    def __init__(self, location, type, deal_type, price, completion_year):
+        self.location = location
+        self.type = type
+        self.deal_type = deal_type
+        self.price = price
+        self.completion_year = completion_year
+
+
+    def show_detail(self):
+        print("{0} {1} {2} {3} {4}".format(self.location, self.type, self.deal_type, self.price, self.completion_year))
+
+GangNam = House("강남", "아파트", "매매", "10억", "2010년")
+Mapo = House("마포", "오피스텔", "전세", "5억", "2007년")
+SongPa = House("송파", "빌라", "월세", "500/20", "2000년")
+
+GangNam.show_detail()
+Mapo.show_detail()
+SongPa.show_detail()
