@@ -345,3 +345,56 @@ with open("study.txt", "r", encoding="utf8") as study_file1:
 
 ## - __02.18__ -
 > **<h3>Class</h3>**
+```python
+class Unit:
+    
+    def setData(self, name, hp, speed):
+        self.name = name
+        self.hp = hp
+        self.speed = speed
+
+    def move(self, location):
+        print("[지상 유닛 이동]")
+        print("{0} : {1} 방향으로 이동합니다. [ 속도 : {2} ]".format(self.name, location, self.speed))
+
+    def __init__(self, name, hp, speed)
+        self.setData(name, hp, speed)
+        print("[체력 : {0}] 의 {1} 유닛이 생성 되었습니다.".format(self.hp, self.name))
+
+    def information(self, name, hp):
+        print("이름 : {0}, 체력 : {1}".format(self.name, self.hp))
+
+Marin = Unit("마린", 40)
+```
+- ` __init__` : 초기화 메소드, 객체가 생성될 때 자동으로 호출되어 성질 부여시켜줌
+- 객체내의 메소드를 생성할 때 `def example(self):`와 같이 `self`를 필히 넣어야한다.
+> 상속
+```python
+class AttackUnit(Unit):
+
+    def setData(self, name, hp, speed):
+        self.name = name
+        self.hp = hp
+        self.speed = speed
+
+    def __init__(self, name, hp, speed, damage):
+        Unit.__init__(self, name, hp, speed)
+        self.damage = damage 
+``` 
+-  **Unit class**의 내용을 상속 받음.
+-  상속받을 클래스의 이름을 `class AttackUnit(Unit)`와 같이 () 안에 작성
+> 다중 상속
+```python
+class FlyableAttackUnit(AttackUnit, Flyable): # 다중 상속 : 부모 클래스를 2개 이상 상속
+    
+    def __init__(self, name, hp, damage, flying_speed):
+        AttackUnit.__init__(self, name, hp, 0, damage) # 지상 speed 0 
+        Flyable.__init__(self, flying_speed)
+
+    def move(self, location): # 메소드 오버라이딩 (재정의)
+        print("[공중 유닛 이동]")
+        self.fly(self.name, location)
+```
+- 메소드 오버라이딩 :  `fly` 와 `move` 하나의 움직이는 동작이므로 같은 의미를 가진다.
+따라서 `fly`와 `move` 함수를 하나로 통일
+- `FlyableAttackUnit` 클래스에서는 `move`로 이용하기 위해 `self.fly()`로 함수 재정의
