@@ -2,7 +2,7 @@
 
 `I'll share the link  i heard in the youtube lecture `
 
-- ## Link : [Youtube](https://www.youtube.com/watch?v=kWiCuklohdY&t=15841s)
+- ### Link : [Youtube](https://www.youtube.com/watch?v=kWiCuklohdY&t=15841s)
 
 ## - __02.08__ -
 > **<h3>Variable</h3>**
@@ -458,9 +458,12 @@ try:
 except BigNumError as err:
     print("Error! 잘못된 값을 입력하였습니다.")
     print(err)
+finally:
+    print("실행을 종료합니다.")
 ```
 - 사용자 정의 예외처리 : 정해진 것이 아닌 사용자가 직접 오류를 예외처리하여 사용
 - `raise`를 통해 원하는 예외를 불러옴
 - `class BigNumError(Exception)`로 원하는 예외를 정의
 - `BigNumError()`를 통해 원하는 메세지 전환
 - `def __str__`클래스 자체의 내용을 출력하고 싶을 때(`__init__`에서 규정한) 형식을 지정하는 메서드
+- `finally:`를 통해 `try`구문 종료시 무조건 실행
