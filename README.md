@@ -398,3 +398,25 @@ class FlyableAttackUnit(AttackUnit, Flyable): # 다중 상속 : 부모 클래스를 2개 이
 - 메소드 오버라이딩 :  `fly` 와 `move` 하나의 움직이는 동작이므로 같은 의미를 가진다.
 따라서 `fly`와 `move` 함수를 하나로 통일
 - `FlyableAttackUnit` 클래스에서는 `move`로 이용하기 위해 `self.fly()`로 함수 재정의
+
+## - __02.27__ -
+> **<h3>Except Handling</h3>**
+```python
+try:
+    print("[한 자리 나누기 전용 계산기]")
+    num = [] # empty list 
+    num.append(int(input("첫번째 숫자를 입력하세요 : ")))
+    num.append(int(input("두번째 숫자를 입력하세요 : ")))
+    num.append(int(num[0] / num[1]))
+    print("{0} / {1} = {2}".format(num[0], num[1], num[4] ))
+except ValueError:
+    print("Error! 잘못된 값을 입력하였습니다.")
+except ZeroDivisionError as err:
+    print(err)
+except:
+    print("Error! 알 수 없는 에러 발생.")
+```
+- 디버깅 중 발생할 수 있는 오류를 예외처리
+- `except ValueError`와 `except ZeroDivisionError`처럼 해당 오류만 예외적으로 처리할 수 있다.
+- 그 외에 오류는 `except:`로 일괄적으로 처리
+- `ZeroDivisionError`의 내용을 `as err`로 `err`라는 변수처럼 이용할 수 있다.
