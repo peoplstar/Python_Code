@@ -437,3 +437,30 @@ except ValueError:
     print("Error! 잘못된 값을 입력하였습니다.")
 ```
 - `raise`를 이용해 강제로 오류를 발생시켜 처리할 수 있다.
+
+```python
+class BigNumError(Exception):
+    def __init__(self,msg):
+        self.msg = msg
+
+    def __str__(self):
+        return self.msg
+
+try:
+    print("[한 자리 나누기 전용 계산기]")
+    num = [] # empty list 
+    num.append(int(input("첫번째 숫자를 입력하세요 : ")))
+    num.append(int(input("두번째 숫자를 입력하세요 : ")))
+    num.append(int(num[0] / num[1]))
+    if num[0] > 10 or num[1] > 10:
+        raise BigNumError("입력값 : {0}    {1}".format(num[0],num[1]))
+    print("{0} / {1} = {2}".format(num[0], num[1], num[2]))
+except BigNumError as err:
+    print("Error! 잘못된 값을 입력하였습니다.")
+    print(err)
+```
+- 사용자 정의 예외처리 : 정해진 것이 아닌 사용자가 직접 오류를 예외처리하여 사용
+- `raise`를 통해 원하는 예외를 불러옴
+- `class BigNumError(Exception)`로 원하는 예외를 정의
+- `BigNumError()`를 통해 원하는 메세지 전환
+- `def __str__`클래스 자체의 내용을 출력하고 싶을 때(`__init__`에서 규정한) 형식을 지정하는 메서드
