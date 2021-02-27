@@ -413,10 +413,27 @@ except ValueError:
     print("Error! 잘못된 값을 입력하였습니다.")
 except ZeroDivisionError as err:
     print(err)
-except:
+except Exception as err:
     print("Error! 알 수 없는 에러 발생.")
+    print(err)
 ```
 - 디버깅 중 발생할 수 있는 오류를 예외처리
 - `except ValueError`와 `except ZeroDivisionError`처럼 해당 오류만 예외적으로 처리할 수 있다.
 - 그 외에 오류는 `except:`로 일괄적으로 처리
+- 그 외에 오류가 무엇인지 알려면 `except Exception as ...`을 이용
 - `ZeroDivisionError`의 내용을 `as err`로 `err`라는 변수처럼 이용할 수 있다.
+
+```python
+try:
+    print("[두 자리 나누기 전용 계산기]")
+    num = [] # empty list 
+    num.append(int(input("첫번째 숫자를 입력하세요 : ")))
+    num.append(int(input("두번째 숫자를 입력하세요 : ")))
+    num.append(int(num[0] / num[1]))
+    if not(100 > num[0] > 10) or not(100 > num[1] > 10):
+        raise ValueError
+    print("{0} / {1} = {2}".format(num[0], num[1], num[2]))
+except ValueError:
+    print("Error! 잘못된 값을 입력하였습니다.")
+```
+- `raise`를 이용해 강제로 오류를 발생시켜 처리할 수 있다.
