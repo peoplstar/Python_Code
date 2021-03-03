@@ -467,3 +467,49 @@ finally:
 - `BigNumError()`를 통해 원하는 메세지 전환
 - `def __str__`클래스 자체의 내용을 출력하고 싶을 때(`__init__`에서 규정한) 형식을 지정하는 메서드
 - `finally:`를 통해 `try`구문 종료시 무조건 실행
+
+## - __03.03__ -
+> **<h3>User Module</h3>**
+```python
+# module_test.py
+# 일반 가격
+def price(people):
+    print("{0}명 가격은 {1}원 입니다.".format(people, people * 10000))
+# 조조 할인 가격
+def price_morning(people):
+    print("{0}명 가격은 {1}원 입니다.".format(people, people * 6000))
+# 군인 할인 가격
+def price_soldier(people):
+    print("{0}명 가격은 {1}원 입니다.".format(people, people * 5000))
+```
+- 다른 파일에서 이용 할 만한 함수를 정의
+```python
+import module_test
+module_test.price(3) # 3명의 영화 가격
+module_test.price_morning(4) # 4명의 조조 할인 가격
+module_test.price_soldier(7) # 7명의 군인 할인 가격
+
+print("")
+
+import module_test as movie
+movie.price(3) # 3명의 영화 가격
+movie.price_morning(4) # 4명의 조조 할인 가격
+movie.price_soldier(7) # 7명의 군인 할인 가격
+
+print("")
+
+from module_test import *
+price(3) # 3명의 영화 가격
+price_morning(4) # 4명의 조조 할인 가격
+price_soldier(7) # 7명의 군인 할인 가격
+
+print("")
+
+from module_test import price, price_morning
+price(3)
+price_morning(4)
+# price_soldier(7) 사용불가
+```
+- `from` `import`를 이용하여 module_test.py의 함수를 활용
+- `import ... as ...`를 이용하여 이름을 재정의해 편리하게 이용
+- `from ... import *` ...내의 모든 함수를 활용
