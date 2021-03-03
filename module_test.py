@@ -8,4 +8,3 @@ def price_morning(people):
 def price_soldier(people):
     print("{0}명 가격은 {1}원 입니다.".format(people, people * 5000))
 
- 

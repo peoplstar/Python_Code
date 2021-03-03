@@ -22,4 +22,4 @@ print("")
 from module_test import price, price_morning
 price(3)
 price_morning(4)
-# price_soldier(7) 사용불가 
+# price_soldier(7) 사용불가
