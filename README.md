@@ -7,60 +7,60 @@
 ## - __02.08__ -
 > **<h3>Variable</h3>**
 ```python
-name = "¿¬ÅºÀÌ"
-animal = "°­¾ÆÁö"
+name = "ì—°íƒ„ì´"
+animal = "ê°•ì•„ì§€"
 age = 4
-hobbit = "»êÃ¥"
+hobbit = "ì‚°ì±…"
 is_adult = age >= 3 
 ```
-- Python¿¡¼­ º¯¼ö ¼±¾ğ½Ã ÀÚ·áÇüÀ» **¾ğ±Ş**ÇÏÁö ¾Ê´Â´Ù.
+- Pythonì—ì„œ ë³€ìˆ˜ ì„ ì–¸ì‹œ ìë£Œí˜•ì„ **ì–¸ê¸‰**í•˜ì§€ ì•ŠëŠ”ë‹¤.
 
 ```python
-print("¿ì¸®Áı" + animal + "ÀÇ ÀÌ¸§Àº" + name + "¿¹¿ä")
-print(name + "´Â " + str(age) + "»ìÀÌ¸ç," + hobbit + "À» ¾ÆÁÖ ÁÁ¾ÆÇØ¿ä") 
+print("ìš°ë¦¬ì§‘" + animal + "ì˜ ì´ë¦„ì€" + name + "ì˜ˆìš”")
+print(name + "ëŠ” " + str(age) + "ì‚´ì´ë©°," + hobbit + "ì„ ì•„ì£¼ ì¢‹ì•„í•´ìš”") 
 ```
-- print´Â StringÀ¸·Î ÀÎ½ÄÇÏ±â¿¡ age¿Í °°Àº Á¤¼öÇüÀº **str()**·Î Çüº¯È¯
+- printëŠ” Stringìœ¼ë¡œ ì¸ì‹í•˜ê¸°ì— ageì™€ ê°™ì€ ì •ìˆ˜í˜•ì€ **str()**ë¡œ í˜•ë³€í™˜
 
 > **<h3>Sentence</h3>**
 ```python
-sentence = '³ª´Â ¼Ò³âÀÔ´Ï´Ù'
+sentence = 'ë‚˜ëŠ” ì†Œë…„ì…ë‹ˆë‹¤'
 print(sentence)
 sentence2 = "this is python"
 print(sentence2)
 sentence3 = """ 
-³ª´Â ¼Ò³âÀÌ°í,
+ë‚˜ëŠ” ì†Œë…„ì´ê³ ,
 this is python
 """ 
 ```
-- String ÃÊ±âÈ­½Ã `' '` , `" "` ·Î °¡´É
-- `"""` , `"""` ·Î ¹­¾îÁÖ¸é __ÁÙ¹Ù²Ş °ø¹é__±îÁö ÀÔ·Â °¡´É
+- String ì´ˆê¸°í™”ì‹œ `' '` , `" "` ë¡œ ê°€ëŠ¥
+- `"""` , `"""` ë¡œ ë¬¶ì–´ì£¼ë©´ __ì¤„ë°”ê¿ˆ ê³µë°±__ê¹Œì§€ ì…ë ¥ ê°€ëŠ¥
 > **<h3>Slicing</h3>**
 ```python
 secret_num = "000000-3111111"
-print("¼ºº° : " + secret_num[7])
-print("¿¬»ı : " + secret_num[0:2])
-print("¿ù : " + secret_num[2:4]) 
+print("ì„±ë³„ : " + secret_num[7])
+print("ì—°ìƒ : " + secret_num[0:2])
+print("ì›” : " + secret_num[2:4]) 
 
-print("»ı³â¿ùÀÏ : " + secret_num[:6])
-print("µÚ 7ÀÚ¸® : " + secret_num[7:])
+print("ìƒë…„ì›”ì¼ : " + secret_num[:6])
+print("ë’¤ 7ìë¦¬ : " + secret_num[7:])
 ```
-- **`[7]`** : ÀÎµ¦½º 7ÀÇ °ªÀ» Ãâ·Â
-- **`[2:4]`** : ÀÎµ¦½º 2 ºÎÅÍ 4 Á÷Àü °ª ±îÁö Ãâ·Â
-- **`[:6]`** : Ã³À½ºÎÅÍ 6 Á÷Àü °ª ±îÁö Ãâ·Â
-- **`[7:]`** : 7 ºÎÅÍ ³¡±îÁö Ãâ·Â
+- **`[7]`** : ì¸ë±ìŠ¤ 7ì˜ ê°’ì„ ì¶œë ¥
+- **`[2:4]`** : ì¸ë±ìŠ¤ 2 ë¶€í„° 4 ì§ì „ ê°’ ê¹Œì§€ ì¶œë ¥
+- **`[:6]`** : ì²˜ìŒë¶€í„° 6 ì§ì „ ê°’ ê¹Œì§€ ì¶œë ¥
+- **`[7:]`** : 7 ë¶€í„° ëê¹Œì§€ ì¶œë ¥
 
 > **<h3>Formating</h3>**
 ```python
-print("³ª´Â %d»ìÀÔ´Ï´Ù." % 20) # printf("%d", operator)
-print("³ª´Â %s»ìÀÔ´Ï´Ù." % 20)
-print("³ª´Â %s¸¦ ÁÁ¾ÆÇØ¿ä" % "ÆÄÀÌ½ã") #  printf("%s", operator) 
+print("ë‚˜ëŠ” %dì‚´ì…ë‹ˆë‹¤." % 20) # printf("%d", operator)
+print("ë‚˜ëŠ” %sì‚´ì…ë‹ˆë‹¤." % 20)
+print("ë‚˜ëŠ” %së¥¼ ì¢‹ì•„í•´ìš”" % "íŒŒì´ì¬") #  printf("%s", operator) 
 
-print("³ª´Â %s»ö°ú %s»öÀ» ÁÁ¾ÆÇØ¿ä." % ("ÆÄ¶õ", "»¡°£"))
-print("³ª´Â {}»ìÀÔ´Ï´Ù.".format(20)) # {}¿¡ °ªÀÌ Æ÷¸ÅÆÃµÈ´Ù.
-print("³ª´Â {}»ö°ú {}»öÀ» ÁÁ¾ÆÇØ¿ä.".format("ÆÄ¶õ","»¡°£"))
-print("³ª´Â {0}»ö°ú {1}»öÀ» ÁÁ¾ÆÇØ¿ä.".format("ÆÄ¶õ","»¡°£"))
+print("ë‚˜ëŠ” %sìƒ‰ê³¼ %sìƒ‰ì„ ì¢‹ì•„í•´ìš”." % ("íŒŒë€", "ë¹¨ê°„"))
+print("ë‚˜ëŠ” {}ì‚´ì…ë‹ˆë‹¤.".format(20)) # {}ì— ê°’ì´ í¬ë§¤íŒ…ëœë‹¤.
+print("ë‚˜ëŠ” {}ìƒ‰ê³¼ {}ìƒ‰ì„ ì¢‹ì•„í•´ìš”.".format("íŒŒë€","ë¹¨ê°„"))
+print("ë‚˜ëŠ” {0}ìƒ‰ê³¼ {1}ìƒ‰ì„ ì¢‹ì•„í•´ìš”.".format("íŒŒë€","ë¹¨ê°„"))
 ```
-- ~~`print("³ª´Â {0}»ö°ú {1}»öÀ» ÁÁ¾ÆÇØ¿ä.".format("ÆÄ¶õ","»¡°£"))` ÀÌ°Í¸¸ »ç¿ë~~
+- ~~`print("ë‚˜ëŠ” {0}ìƒ‰ê³¼ {1}ìƒ‰ì„ ì¢‹ì•„í•´ìš”.".format("íŒŒë€","ë¹¨ê°„"))` ì´ê²ƒë§Œ ì‚¬ìš©~~
 
 ## - __02.09__ -
 > **<h3>Math</h3>**
@@ -74,12 +74,12 @@ print((3 > 0) & (3 < 5))
 print((3 > 0) or (7 < 5))
 print((3 > 0) | (7 < 5))
 ```
-- `!=` ¿Í `not`Àº True ÀÏ¶§ False, False ÀÏ¶§ True °ªÀ» ¹İÈ¯
+- `!=` ì™€ `not`ì€ True ì¼ë•Œ False, False ì¼ë•Œ True ê°’ì„ ë°˜í™˜
 
 ```python
-print(int(random() * 10)) # 0 ~ 10 ¹Ì¸¸ÀÇ ÀÓÀÇÀÇ Á¤¼ö°ª »ı¼º
-print(randrange(0,10)) # 0 ~ 10 ¹Ì¸¸ÀÇ ÀÓÀÇÀÇ °ª »ı¼º
-print(randint(0,9)) # 0 ~ 9 ÀÌÇÏÀÇ ÀÓÀÇÀÇ °ª »ı¼º
+print(int(random() * 10)) # 0 ~ 10 ë¯¸ë§Œì˜ ì„ì˜ì˜ ì •ìˆ˜ê°’ ìƒì„±
+print(randrange(0,10)) # 0 ~ 10 ë¯¸ë§Œì˜ ì„ì˜ì˜ ê°’ ìƒì„±
+print(randint(0,9)) # 0 ~ 9 ì´í•˜ì˜ ì„ì˜ì˜ ê°’ ìƒì„±
 ```
 
 | <img src="https://github.com/peoplstar/Python_Code/blob/main/random_ex/int(random()).PNG" width="80%" height="100%" alt="int(random())"></img> |<img src="https://github.com/peoplstar/Python_Code/blob/main/random_ex/randrange().PNG" width="85%" height="100%" alt="randrange()"></img>|<img src="https://github.com/peoplstar/Python_Code/blob/main/random_ex/randint().PNG" width="90%" height="100%" alt="randint()"></img>|   
@@ -91,257 +91,257 @@ print(randint(0,9)) # 0 ~ 9 ÀÌÇÏÀÇ ÀÓÀÇÀÇ °ª »ı¼º
 
 ```python
 num_list = [10, 20, 30]
-subway = ["À¯Àç¼®", "Á¶¼¼È£", "¹Ú¸í¼ö"]
+subway = ["ìœ ì¬ì„", "ì¡°ì„¸í˜¸", "ë°•ëª…ìˆ˜"]
 empty = list() 
 empty = []
 subway[-1]
 ```
-- List´Â ÀÎµ¦½º¸¦ Áö´Ñ ¹è¿­°ú µ¿ÀÏ
-- ÀÎµ¦½º -1 ÀÎ °æ¿ì´Â °¡Àå ¸¶Áö¸· ÀÎµ¦½º¿¡ Á¢±Ù
+- ListëŠ” ì¸ë±ìŠ¤ë¥¼ ì§€ë‹Œ ë°°ì—´ê³¼ ë™ì¼
+- ì¸ë±ìŠ¤ -1 ì¸ ê²½ìš°ëŠ” ê°€ì¥ ë§ˆì§€ë§‰ ì¸ë±ìŠ¤ì— ì ‘ê·¼
   
 > **<h3>List Function</h3>**
 ```python
-subway.append("ÇÏÇÏ")
-subway.insert(1, "Á¤Çüµ·")
+subway.append("í•˜í•˜")
+subway.insert(1, "ì •í˜•ëˆ")
 num_list.sort()
 num_list.reverse()
 del num_list[2]
 num_list.index(5)
 ```
-`.append("temp")` : temp °ªÀ» ¸¶Áö¸· ÀÎµ¦½º¿¡ Ãß°¡   
-`.insert(1,"temp")` : ÀÎµ¦½º 1 ÀÎ À§Ä¡¿¡ temp °ª ´ëÀÔ <mark> &</mark> ±× ÀÌÈÄ °ªÀº ¸ğµÎ ÇÑÀÚ¸®¾¿ ¹Ğ·Á³²   
-`.sort()` : ¿À¸§Â÷¼øÀ¸·Î Á¤·Ä   
-`.reverse()` : ¸®½ºÆ®ÀÇ ³»ºÎ¸¦ ¿ª¼øÀ¸·Î µÚÁıÀ½ 
-`del num_list[2]` : ÀÎµ¦½º°¡ 2ÀÎ ºÎºĞÀÇ °ªÀ» »èÁ¦   
-`.index(5)` : ¸®½ºÆ®¿¡ ÇØ´ç °ªÀÌ ÀÖÀ¸¸é À§Ä¡ °ªÀ» Ãâ·Â <mark>&</mark> ¾øÀ¸¸é ValueError
+`.append("temp")` : temp ê°’ì„ ë§ˆì§€ë§‰ ì¸ë±ìŠ¤ì— ì¶”ê°€   
+`.insert(1,"temp")` : ì¸ë±ìŠ¤ 1 ì¸ ìœ„ì¹˜ì— temp ê°’ ëŒ€ì… <mark> &</mark> ê·¸ ì´í›„ ê°’ì€ ëª¨ë‘ í•œìë¦¬ì”© ë°€ë ¤ë‚¨   
+`.sort()` : ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬   
+`.reverse()` : ë¦¬ìŠ¤íŠ¸ì˜ ë‚´ë¶€ë¥¼ ì—­ìˆœìœ¼ë¡œ ë’¤ì§‘ìŒ 
+`del num_list[2]` : ì¸ë±ìŠ¤ê°€ 2ì¸ ë¶€ë¶„ì˜ ê°’ì„ ì‚­ì œ   
+`.index(5)` : ë¦¬ìŠ¤íŠ¸ì— í•´ë‹¹ ê°’ì´ ìˆìœ¼ë©´ ìœ„ì¹˜ ê°’ì„ ì¶œë ¥ <mark>&</mark> ì—†ìœ¼ë©´ ValueError
 
 > **<h3> Dictionary</h3>** 
 ```python
-cabinet = {3:"À¯Àç¼®", 100:"±èÅÂÈ£"}
+cabinet = {3:"ìœ ì¬ì„", 100:"ê¹€íƒœí˜¸"}
 dic = {'name':'pey', 'phone':'0119993323', 'birth': '1118'}
-cabinet["A-3"] = "¸¶¿ì½º"
-cabinet["C-23"] = "ÆĞµå"
+cabinet["A-3"] = "ë§ˆìš°ìŠ¤"
+cabinet["C-23"] = "íŒ¨ë“œ"
 ```
-- `{key : "value"}` ÀÇ Çü½ÄÀ¸·Î key¿Í value¸¦ ½Ö ÇüÅÂ
-- Dictionary ¿¡¼­ key´Â °íÀ¯ÇÑ °ªÀÌ±â¿¡ Áßº¹µÉ ¼ö ¾ø´Ù.
-- KeyÀÇ °ªÀº º¯ÇÏ¸é ¾ÈµÇ±â¿¡ Key¿¡´Â List¸¦ »ç¿ë ÇÒ ¼ö ¾øÁö¸¸     
-TupleÀº »ç¿ë °¡´ÉÇÏ´Ù.
+- `{key : "value"}` ì˜ í˜•ì‹ìœ¼ë¡œ keyì™€ valueë¥¼ ìŒ í˜•íƒœ
+- Dictionary ì—ì„œ keyëŠ” ê³ ìœ í•œ ê°’ì´ê¸°ì— ì¤‘ë³µë  ìˆ˜ ì—†ë‹¤.
+- Keyì˜ ê°’ì€ ë³€í•˜ë©´ ì•ˆë˜ê¸°ì— Keyì—ëŠ” Listë¥¼ ì‚¬ìš© í•  ìˆ˜ ì—†ì§€ë§Œ     
+Tupleì€ ì‚¬ìš© ê°€ëŠ¥í•˜ë‹¤.
 
 ####   **- Dictionary Key**
 ```python
-print(cabinet[3]) # ¸¸¾à Å°°ªÀÌ À¯È¿ÇÏÁö ¾ÊÀ» ¶§ ¿À·ù¹ß»ı
-print(cabinet.get(3)) # ¸¸¾à Å°°ªÀÌ À¯È¿ÇÏÁö ¾ÊÀ» ¶§ None Ãâ·Â
-print(cabinet.get(5, "»ç¿ë °¡´É")) # None ´ë½Å ¿À·ù °ªÀ» º¯°æ
-print(3 in cabinet) # 3 ÀÌ¶ó´Â °ªÀÌ cabinet ¿¡ ÀÖÀ¸¸é True ¾øÀ¸¸é False
+print(cabinet[3]) # ë§Œì•½ í‚¤ê°’ì´ ìœ íš¨í•˜ì§€ ì•Šì„ ë•Œ ì˜¤ë¥˜ë°œìƒ
+print(cabinet.get(3)) # ë§Œì•½ í‚¤ê°’ì´ ìœ íš¨í•˜ì§€ ì•Šì„ ë•Œ None ì¶œë ¥
+print(cabinet.get(5, "ì‚¬ìš© ê°€ëŠ¥")) # None ëŒ€ì‹  ì˜¤ë¥˜ ê°’ì„ ë³€ê²½
+print(3 in cabinet) # 3 ì´ë¼ëŠ” ê°’ì´ cabinet ì— ìˆìœ¼ë©´ True ì—†ìœ¼ë©´ False
 ```
 
 ## - __02.11__ -
 > **<h3>Conditional</h3>**
 ```python
-weather = input("¿À´Ã ³¯¾¾´Â ¾î¶§¿ä? : ") 
-temp = int(input("±â¿ÂÀº ¾î¶§¿ä? : "))
-    print("¿ì»êÀ» Ã¬±â¼¼¿ä")
-elif weather == "¹Ì¼¼¸ÕÁö": # else if
-    print("¸¶½ºÅ©¸¦ Ã¬±â¼¼¿ä")
+weather = input("ì˜¤ëŠ˜ ë‚ ì”¨ëŠ” ì–´ë•Œìš”? : ") 
+temp = int(input("ê¸°ì˜¨ì€ ì–´ë•Œìš”? : "))
+    print("ìš°ì‚°ì„ ì±™ê¸°ì„¸ìš”")
+elif weather == "ë¯¸ì„¸ë¨¼ì§€": # else if
+    print("ë§ˆìŠ¤í¬ë¥¼ ì±™ê¸°ì„¸ìš”")
 else:
-    print("ÁØºñ¹° ÇÊ¿ä ¾ø¾î¿ä")  
+    print("ì¤€ë¹„ë¬¼ í•„ìš” ì—†ì–´ìš”")  
 
 if 30 <= temp:
-    print("³Ê¹« ´õ¿ö¿ä")
+    print("ë„ˆë¬´ ë”ì›Œìš”")
 elif 10 <= temp and temp < 30:
-    print("µû¶æÇØ¿ä")
+    print("ë”°ëœ»í•´ìš”")
 elif 0 <= temp < 10:
-    print("¿ÜÅõ¸¦ Ã¬±â¼¼¿ä")
+    print("ì™¸íˆ¬ë¥¼ ì±™ê¸°ì„¸ìš”")
 else: 
-    print("¸¹ÀÌ Ãß¿ö¿ä")
+    print("ë§ì´ ì¶”ì›Œìš”")
 ```
 - `and` = `&`  &nbsp;&nbsp;,&nbsp;&nbsp;  `or` = `|`
-- inputÀº Ç×»ó ¹®ÀÚ¿­ `[` scanf , cin << `]` ¿Í À¯»ç 
-- Ç×»ó ¹®ÀÚ¿­·Î ¹Ş±â¿¡ `int(input())`·Î Çüº¯È¯ÀÌ ÇÊ¿ä
+- inputì€ í•­ìƒ ë¬¸ìì—´ `[` scanf , cin << `]` ì™€ ìœ ì‚¬ 
+- í•­ìƒ ë¬¸ìì—´ë¡œ ë°›ê¸°ì— `int(input())`ë¡œ í˜•ë³€í™˜ì´ í•„ìš”
 
-####   **- For ¹İº¹¹®**
+####   **- For ë°˜ë³µë¬¸**
 ```python
 for waiting_number in [0, 1, 2, 3, 4]:
-    print("´ë±â¹øÈ£ : {0}".format(waiting_number))
+    print("ëŒ€ê¸°ë²ˆí˜¸ : {0}".format(waiting_number))
 
 for waiting_number in range(0, 5): 
-    print("´ë±â¹øÈ£ : {0}".format(waiting_number))
+    print("ëŒ€ê¸°ë²ˆí˜¸ : {0}".format(waiting_number))
 
-    starbucks = ["¾ÆÀÌ¾ğ¸Ç", "Åä¸£", "±×·çÆ®"]
+    starbucks = ["ì•„ì´ì–¸ë§¨", "í† ë¥´", "ê·¸ë£¨íŠ¸"]
 for customer in starbucks:
-    print("{0}¼Õ´Ô, Ä¿ÇÇ°¡ ÁØºñµÇ¾ú½À´Ï´Ù.".format(customer))
+    print("{0}ì†ë‹˜, ì»¤í”¼ê°€ ì¤€ë¹„ë˜ì—ˆìŠµë‹ˆë‹¤.".format(customer))
 ```
-####   **- While ¹İº¹¹®**
+####   **- While ë°˜ë³µë¬¸**
 ```python
-customer = "Åä¸£"
+customer = "í† ë¥´"
 index = 5
 while index >= 1: 
-    print("{0}, Ä¿ÇÇ°¡ ÁØºñ µÇ¾ú½À´Ï´Ù. {1}¹ø ³²¾Ò¾Æ¿ä.".format(customer,index))
+    print("{0}, ì»¤í”¼ê°€ ì¤€ë¹„ ë˜ì—ˆìŠµë‹ˆë‹¤. {1}ë²ˆ ë‚¨ì•˜ì•„ìš”.".format(customer,index))
     index -= 1
     if index == 0:
-        print("Ä¿ÇÇ´Â Æó±âÃ³ºĞµÇ¾ú½À´Ï´Ù.")
+        print("ì»¤í”¼ëŠ” íê¸°ì²˜ë¶„ë˜ì—ˆìŠµë‹ˆë‹¤.")
 
 # continue, break
 absent = [2, 5] 
 no_book = [7]
 for student in range(1, 11):
-    if student in absent: # student°¡ absent ¿¡ Æ÷ÇÔ µÇ¾îÀÖ´Ù¸é
+    if student in absent: # studentê°€ absent ì— í¬í•¨ ë˜ì–´ìˆë‹¤ë©´
         continue 
     elif student in no_book:
-        print("¿À´Ã ¼ö¾÷ ¿©±â±îÁö. {0}´Â ±³¹«½Ç·Î".format(student))
+        print("ì˜¤ëŠ˜ ìˆ˜ì—… ì—¬ê¸°ê¹Œì§€. {0}ëŠ” êµë¬´ì‹¤ë¡œ".format(student))
         break
-    print("{0}, Ã¥ ÀĞ¾îºÁ.".format(student))
+    print("{0}, ì±… ì½ì–´ë´.".format(student))
 print("\n\n")
 ```
-- `while ()` ³»ºÎ Á¶°Ç½ÄÀÌ False ÀÏ¶§ ¹İº¹ Á¾·á
-- `continue`  ´ÙÀ½ ¹İº¹À¸·Î °Ç³Ê¶Ü
-- `break` ¹İº¹¹® Á¾·á
+- `while ()` ë‚´ë¶€ ì¡°ê±´ì‹ì´ False ì¼ë•Œ ë°˜ë³µ ì¢…ë£Œ
+- `continue`  ë‹¤ìŒ ë°˜ë³µìœ¼ë¡œ ê±´ë„ˆëœ€
+- `break` ë°˜ë³µë¬¸ ì¢…ë£Œ
 
 ## - __02.12__ -
 > **<h3>Function</h3>**
 ```python
-# ±âº»°ª ¼³Á¤
+# ê¸°ë³¸ê°’ ì„¤ì •
 
 def profile(name, age, main_lang):
-    print("ÀÌ¸§ : {0}\t ³ªÀÌ : {1}\t ÁÖ »ç¿ë ¾ğ¾î : {2}".format(name, age, main_lang))
+    print("ì´ë¦„ : {0}\t ë‚˜ì´ : {1}\t ì£¼ ì‚¬ìš© ì–¸ì–´ : {2}".format(name, age, main_lang))
 
-profile("À¯Àç¼®", 20, "ÆÄÀÌ½ã")
-profile("±èÅÂÈ£", 25, "C¾ğ¾î")
+profile("ìœ ì¬ì„", 20, "íŒŒì´ì¬")
+profile("ê¹€íƒœí˜¸", 25, "Cì–¸ì–´")
 ```
 ```python
-# °°Àº ³ªÀÌ °°Àº ¼ö¾÷ °°Àº ÇĞ±³.
+# ê°™ì€ ë‚˜ì´ ê°™ì€ ìˆ˜ì—… ê°™ì€ í•™êµ.
 
-def profile1(name, age = 17, main_lang = "ÆÄÀÌ½ã"):
-    print("ÀÌ¸§ : {0}\t ³ªÀÌ : {1}\t ÁÖ »ç¿ë ¾ğ¾î : {2}".format(name, age, main_lang))
+def profile1(name, age = 17, main_lang = "íŒŒì´ì¬"):
+    print("ì´ë¦„ : {0}\t ë‚˜ì´ : {1}\t ì£¼ ì‚¬ìš© ì–¸ì–´ : {2}".format(name, age, main_lang))
 
-profile1("¹Ú¸í¼ö")
+profile1("ë°•ëª…ìˆ˜")
 ```
-- ÀÎÀÚ¸¦ ±âº»À¸·Î ¼³Á¤ÇÏ¿© ÀÌ¸§¸¸ ³Ñ°ÜÁàµµ ½ÇÇà°¡´É
+- ì¸ìë¥¼ ê¸°ë³¸ìœ¼ë¡œ ì„¤ì •í•˜ì—¬ ì´ë¦„ë§Œ ë„˜ê²¨ì¤˜ë„ ì‹¤í–‰ê°€ëŠ¥
 ```python
-# °¡º¯ ÀÎÀÚ 
+# ê°€ë³€ ì¸ì 
 def profile2(name, age, *main_lang): 
-    print("ÀÌ¸§ : {0}\t ³ªÀÌ : {1}\t".format(name, age), end = " ") # end = " " Ãâ·Â ½Ã ÁÙ¹Ù²ŞÀ» ÀÌÇàÇÏÁö ¾ÊÀ½
+    print("ì´ë¦„ : {0}\t ë‚˜ì´ : {1}\t".format(name, age), end = " ") # end = " " ì¶œë ¥ ì‹œ ì¤„ë°”ê¿ˆì„ ì´í–‰í•˜ì§€ ì•ŠìŒ
     for lang in main_lang:
         print(lang, end = " ")
-    print() # ÁÙ¹Ù²Ş
+    print() # ì¤„ë°”ê¿ˆ
 
-profile2("À¯Àç¼®", 20, "Python", "Java", "C", "C++", "C#")
-profile2("±èÅÂÈ£", 23, "KOtiln", "Swift")
+profile2("ìœ ì¬ì„", 20, "Python", "Java", "C", "C++", "C#")
+profile2("ê¹€íƒœí˜¸", 23, "KOtiln", "Swift")
 ```
-- `*main_lang` ½Ã ÀÎÀÚ¸¦ ¿©·¯ °³ ÀÔ·Â ¹ŞÀ» ¼ö ÀÖÀ½
+- `*main_lang` ì‹œ ì¸ìë¥¼ ì—¬ëŸ¬ ê°œ ì…ë ¥ ë°›ì„ ìˆ˜ ìˆìŒ
 ------
 ```python
-gun = 10 # Àü¿ª º¯¼ö
+gun = 10 # ì „ì—­ ë³€ìˆ˜
 
-def checkprint(soldiers): # °æ°è±Ù¹«
+def checkprint(soldiers): # ê²½ê³„ê·¼ë¬´
     gun = 20 # ------(1)
-    gun = gun - soldiers # Áö¿ª º¯¼ö
-    print("[ÇÔ¼ö ³»] ³²Àº ÃÑ : {0}".format(gun))
+    gun = gun - soldiers # ì§€ì—­ ë³€ìˆ˜
+    print("[í•¨ìˆ˜ ë‚´] ë‚¨ì€ ì´ : {0}".format(gun))
 
-print("ÀüÃ¼ ÃÑ : {0}".format(gun)) # Áö¿ª º¯¼ö '10 Ãâ·Â'
-checkprint(2) # 2¸íÀÌ °æ°è ±Ù¹« ³ª°¨ '18' Ãâ·Â
-print("³²Àº ÃÑ : {0}".format(gun)) # Áö¿ª º¯¼ö '10 Ãâ·Â'
+print("ì „ì²´ ì´ : {0}".format(gun)) # ì§€ì—­ ë³€ìˆ˜ '10 ì¶œë ¥'
+checkprint(2) # 2ëª…ì´ ê²½ê³„ ê·¼ë¬´ ë‚˜ê° '18' ì¶œë ¥
+print("ë‚¨ì€ ì´ : {0}".format(gun)) # ì§€ì—­ ë³€ìˆ˜ '10 ì¶œë ¥'
 ```
-- **Áö¿ªº¯¼ö** = `[`ÇÔ¼ö ³»¿¡¼­¸¸ ÀÌ¿ë°¡´É `/` ÇÔ¼ö È£Ãâ ½Ã »ı¼º ÇÔ¼öÈ£Ãâ `/` ³¡³¯ ½Ã »ç¶óÁü`]`
-- **Àü¿ªº¯¼ö** = `[`ÇÁ·Î±×·¥ ¾îµğ¿¡¼­µµ È£Ãâ °¡´É`]`
-- **---- (1)** ¿¡¼­ Àü¿ª º¯¼ö·Î »ç¿ëÇÏ±â À§ÇØ¼­´Â `global gun`¿Í °°ÀÌ º¯¼ö ¾Õ¿¡ `global` À» »ç¿ë 
+- **ì§€ì—­ë³€ìˆ˜** = `[`í•¨ìˆ˜ ë‚´ì—ì„œë§Œ ì´ìš©ê°€ëŠ¥ `/` í•¨ìˆ˜ í˜¸ì¶œ ì‹œ ìƒì„± í•¨ìˆ˜í˜¸ì¶œ `/` ëë‚  ì‹œ ì‚¬ë¼ì§`]`
+- **ì „ì—­ë³€ìˆ˜** = `[`í”„ë¡œê·¸ë¨ ì–´ë””ì—ì„œë„ í˜¸ì¶œ ê°€ëŠ¥`]`
+- **---- (1)** ì—ì„œ ì „ì—­ ë³€ìˆ˜ë¡œ ì‚¬ìš©í•˜ê¸° ìœ„í•´ì„œëŠ” `global gun`ì™€ ê°™ì´ ë³€ìˆ˜ ì•ì— `global` ì„ ì‚¬ìš© 
   
 ## - __02.13__ -
 > **<h3>Standard In & Ounput</h3>**
 ```python
 print("Python", "java", "C++", sep=",", end="?")  
-print("¹«¾ùÀÌ ´õ Àç¹ÌÀÖÀ»±î¿ä?")
+print("ë¬´ì—‡ì´ ë” ì¬ë¯¸ìˆì„ê¹Œìš”?")
 ```
-- `sep` °ªÀ» ÅëÇØ ¹®ÀÚ°£ °ø¹é Ã³¸®¸¦ º¯°æ 
-- `end` °ªÀ» ÅëÇØ ¹®ÀÚ¿­ ¸¶Áö¸·À» º¯°æ **default´Â ÁÙ¹Ù²Ş**
+- `sep` ê°’ì„ í†µí•´ ë¬¸ìê°„ ê³µë°± ì²˜ë¦¬ë¥¼ ë³€ê²½ 
+- `end` ê°’ì„ í†µí•´ ë¬¸ìì—´ ë§ˆì§€ë§‰ì„ ë³€ê²½ **defaultëŠ” ì¤„ë°”ê¿ˆ**
 ```python
-scores = {"¼öÇĞ":0, "¿µ¾î":50, "ÄÚµù":100} # dictionary
-for subject, score in scores.items(): # scoresÀÇ key °¡ subject, values °¡ score·Î Æ©ÇÃ·Î º¸³¿
+scores = {"ìˆ˜í•™":0, "ì˜ì–´":50, "ì½”ë”©":100} # dictionary
+for subject, score in scores.items(): # scoresì˜ key ê°€ subject, values ê°€ scoreë¡œ íŠœí”Œë¡œ ë³´ëƒ„
     print(subject.ljust(8), str(score).rjust(4), sep=":")
                                                           
 ```
-- `ljust(8)` ÃÑ 8Ä­À» È®º¸ÇÑ ÈÄ ¿ŞÂÊÀ¸·Î Á¤·Ä
-- `rjust(4)` ÃÑ 4Ä­À» È®º¸ÇÑ ÈÄ ¿À¸¥ÂÊÀ¸·Î Á¤·Ä
+- `ljust(8)` ì´ 8ì¹¸ì„ í™•ë³´í•œ í›„ ì™¼ìª½ìœ¼ë¡œ ì •ë ¬
+- `rjust(4)` ì´ 4ì¹¸ì„ í™•ë³´í•œ í›„ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì •ë ¬
 ```python
 # 001, 002, 003, 004, ...
 for num in range(1, 21):
-    print("´ë±â¹øÈ£ : " + str(num).zfill(3)) 
+    print("ëŒ€ê¸°ë²ˆí˜¸ : " + str(num).zfill(3)) 
 ```
-- `zfill(3)` 3°³ÀÇ °ø°£ Áß ¾ø´Â ºÎºĞÀ» 0À¸·Î Ã¤¿ò `[ zero fill ]`
+- `zfill(3)` 3ê°œì˜ ê³µê°„ ì¤‘ ì—†ëŠ” ë¶€ë¶„ì„ 0ìœ¼ë¡œ ì±„ì›€ `[ zero fill ]`
 ```python
-# ºó ÀÚ¸®´Â °ø¹éÀ¸·Î µÎ°í, ¿À¸¥ÂÊ Á¤·ÄÀ» ÇÏµÇ, ÃÑ 10ÀÚ¸® È®º¸
-print("{0: >10}".format(500)) # ' ' : °ø¹éÃ³¸® > : ¿À¸¥ÂÊ Á¤·Ä 10 : 10ÀÚ¸® È®º¸
+# ë¹ˆ ìë¦¬ëŠ” ê³µë°±ìœ¼ë¡œ ë‘ê³ , ì˜¤ë¥¸ìª½ ì •ë ¬ì„ í•˜ë˜, ì´ 10ìë¦¬ í™•ë³´
+print("{0: >10}".format(500)) # ' ' : ê³µë°±ì²˜ë¦¬ > : ì˜¤ë¥¸ìª½ ì •ë ¬ 10 : 10ìë¦¬ í™•ë³´
 
-# ¾ç¼öÀÏ ¶© + Ç¥½Ã, À½¼öÀÏ ¶§ - Ç¥½Ã
+# ì–‘ìˆ˜ì¼ ë• + í‘œì‹œ, ìŒìˆ˜ì¼ ë•Œ - í‘œì‹œ
 print("{0: >+10}".format(500))
 print("{0: >+10}".format(-500))
 
-# ¿ŞÂÊ Á¤·ÄÇÏ°í, ºóÄ­À» _·Î Ã¤¿ò
+# ì™¼ìª½ ì •ë ¬í•˜ê³ , ë¹ˆì¹¸ì„ _ë¡œ ì±„ì›€
 print("{0:_<-10}".format(-500))
 
-# 3ÀÚ¸®¸¶´Ù ,Ã³¸® +- ºÎÈ£Ã³¸®
+# 3ìë¦¬ë§ˆë‹¤ ,ì²˜ë¦¬ +- ë¶€í˜¸ì²˜ë¦¬
 print("{0:+,}".format(-1000000000))
 print("{0:-,}".format(1000000000))
 
-# ¼Ò¼öÁ¡ Ãâ·Â
+# ì†Œìˆ˜ì  ì¶œë ¥
 print("{0:f}".format(5/3))
-print("{0:.2f}".format(5/3)) # ¼Ò¼ö µÑÂ°ÀÚ¸®±îÁö Ãâ·Â
+print("{0:.2f}".format(5/3)) # ì†Œìˆ˜ ë‘˜ì§¸ìë¦¬ê¹Œì§€ ì¶œë ¥
 ```
 ## - __02.16__ -
 > **<h3>File Input</h3>**
 ```python
 score_file = open("score.txt","w",encoding="utf8") 
-print("¼öÇĞ : 0", file=score_file)
-print("¿µ¾î : 50", file=score_file)
-score_file.close() # score.txt ÆÄÀÏÀÌ »ı¼ºµÇ¸é¼­ print ÇØ´ç ¹®ÀÚ¿­ÀÌ ÅØ½ºÆ®ÆÄÀÏ¾È¿¡ ÀúÀå
+print("ìˆ˜í•™ : 0", file=score_file)
+print("ì˜ì–´ : 50", file=score_file)
+score_file.close() # score.txt íŒŒì¼ì´ ìƒì„±ë˜ë©´ì„œ print í•´ë‹¹ ë¬¸ìì—´ì´ í…ìŠ¤íŠ¸íŒŒì¼ì•ˆì— ì €ì¥
 ```
 ```python
 score_file = open("score.txt", "a", encoding="utf8") 
-score_file.write("°úÇĞ : 80")
-score_file.write("\nÄÚµù : 100")
+score_file.write("ê³¼í•™ : 80")
+score_file.write("\nì½”ë”© : 100")
 score_file.close()
 ```
 ```python
 score_file = open("score.txt", "r", encoding="utf8")
-print(score_file.read()) # score.fileÀ» ÀĞ¾î ÇÑ¹ø¿¡ Ãâ·Â
+print(score_file.read()) # score.fileì„ ì½ì–´ í•œë²ˆì— ì¶œë ¥
 score_file.close()
 ```
-- ¾²±âÀ§ÇÑ ¸ñÀû `W` , ÀĞ±âÀ§ÇÑ ¸ñÀû `R` , µ¤¾î¾²±â `A` ,  `encondig="utf8"` À» ÀÔ·ÂÇÏÁö ¾ÊÀ»½Ã ÇÑ±Û ±úÁü Çö»ó
+- ì“°ê¸°ìœ„í•œ ëª©ì  `W` , ì½ê¸°ìœ„í•œ ëª©ì  `R` , ë®ì–´ì“°ê¸° `A` ,  `encondig="utf8"` ì„ ì…ë ¥í•˜ì§€ ì•Šì„ì‹œ í•œê¸€ ê¹¨ì§ í˜„ìƒ
   
-- `write()`¸¦ »ç¿ëÇÒ ½Ã ÁÙ¹Ù²ŞÀ» Æ÷ÇÔÇÏÁö ¾Ê´Â´Ù.   
- µû¶ó¼­ `\n `Æ÷ÇÔ½ÃÄÑÁà¾ßÇÔ.
+- `write()`ë¥¼ ì‚¬ìš©í•  ì‹œ ì¤„ë°”ê¿ˆì„ í¬í•¨í•˜ì§€ ì•ŠëŠ”ë‹¤.   
+ ë”°ë¼ì„œ `\n `í¬í•¨ì‹œì¼œì¤˜ì•¼í•¨.
 
 > **<h3>File Output</h3>**
 ```python
 score_file = open("score.txt", "r", encoding="utf8")
 while True:
     line = score_file.readline()
-    if not line: # ÀĞ¾î¿À´Â ³»¿ëÀÌ ¾øÀ¸¸é
+    if not line: # ì½ì–´ì˜¤ëŠ” ë‚´ìš©ì´ ì—†ìœ¼ë©´
         break
     print(line, end="")
 score_file.close()
 ```
 ```python
 score_file = open("score.txt", "r", encoding="utf8")
-lines = score_file.readlines() # ¸ğµç lineÀ» ÀĞ¾î¼­ list ÇüÅÂ·Î ÀúÀå
+lines = score_file.readlines() # ëª¨ë“  lineì„ ì½ì–´ì„œ list í˜•íƒœë¡œ ì €ì¥
 for line in lines:
     print(line, end="")
 score_file.close()
 ```
-- `print(line)`¸¸ ÀÌ¿ë ÇÒ ½Ã ÇÑ ÁÙ ÀĞ°í Ä¿¼­´Â ÀÚµ¿À¸·Î ´ÙÀ½ ÁÙ·Î ÀÌµ¿
-- ÃÑ 2¹øÀÇ ÁÙ¹Ù²ŞÀÌ ÀÏ¾î³ª°Ô µÇ¹Ç·Î `print(line, end="")` ·Î Ãâ·Â 
-> **<h3>with ¿¬»êÀÚ</h3>**
-- ÀÏ¹İ ÀÔÃâ·Â ½Ã `open()`,`close()` µÎ¹ø¿¡ °ÉÃÄ ½ÇÇà
-- `with`¿¬»êÀÚ ÀÌ¿ë½Ã `close()`¹®À» »ç¿ëÇÏÁö ¾Ê¾Æ ¹ø°Å·Î¿òÀ» Á¦°Å
+- `print(line)`ë§Œ ì´ìš© í•  ì‹œ í•œ ì¤„ ì½ê³  ì»¤ì„œëŠ” ìë™ìœ¼ë¡œ ë‹¤ìŒ ì¤„ë¡œ ì´ë™
+- ì´ 2ë²ˆì˜ ì¤„ë°”ê¿ˆì´ ì¼ì–´ë‚˜ê²Œ ë˜ë¯€ë¡œ `print(line, end="")` ë¡œ ì¶œë ¥ 
+> **<h3>with ì—°ì‚°ì</h3>**
+- ì¼ë°˜ ì…ì¶œë ¥ ì‹œ `open()`,`close()` ë‘ë²ˆì— ê±¸ì³ ì‹¤í–‰
+- `with`ì—°ì‚°ì ì´ìš©ì‹œ `close()`ë¬¸ì„ ì‚¬ìš©í•˜ì§€ ì•Šì•„ ë²ˆê±°ë¡œì›€ì„ ì œê±°
 
 ```python
 with open("study.txt", "w", encoding="utf8") as study_file: 
-    study_file.write("PythonÀ» °øºÎÇÕ´Ï´Ù.")
+    study_file.write("Pythonì„ ê³µë¶€í•©ë‹ˆë‹¤.")
 
 with open("study.txt", "r", encoding="utf8") as study_file1:
     print(study_file1.read()) 
 ```
-- `as study_file` : ºÒ·¯¿Â `study.txt` ÆÄÀÏ³»¿ëÀ» º¯¼ö `study_file`¿¡ ÀÓ½Ã ÀúÀå
+- `as study_file` : ë¶ˆëŸ¬ì˜¨ `study.txt` íŒŒì¼ë‚´ìš©ì„ ë³€ìˆ˜ `study_file`ì— ì„ì‹œ ì €ì¥
 
 ## - __02.18__ -
 > **<h3>Class</h3>**
@@ -354,21 +354,21 @@ class Unit:
         self.speed = speed
 
     def move(self, location):
-        print("[Áö»ó À¯´Ö ÀÌµ¿]")
-        print("{0} : {1} ¹æÇâÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù. [ ¼Óµµ : {2} ]".format(self.name, location, self.speed))
+        print("[ì§€ìƒ ìœ ë‹› ì´ë™]")
+        print("{0} : {1} ë°©í–¥ìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤. [ ì†ë„ : {2} ]".format(self.name, location, self.speed))
 
     def __init__(self, name, hp, speed)
         self.setData(name, hp, speed)
-        print("[Ã¼·Â : {0}] ÀÇ {1} À¯´ÖÀÌ »ı¼º µÇ¾ú½À´Ï´Ù.".format(self.hp, self.name))
+        print("[ì²´ë ¥ : {0}] ì˜ {1} ìœ ë‹›ì´ ìƒì„± ë˜ì—ˆìŠµë‹ˆë‹¤.".format(self.hp, self.name))
 
     def information(self, name, hp):
-        print("ÀÌ¸§ : {0}, Ã¼·Â : {1}".format(self.name, self.hp))
+        print("ì´ë¦„ : {0}, ì²´ë ¥ : {1}".format(self.name, self.hp))
 
-Marin = Unit("¸¶¸°", 40)
+Marin = Unit("ë§ˆë¦°", 40)
 ```
-- ` __init__` : ÃÊ±âÈ­ ¸Ş¼Òµå, °´Ã¼°¡ »ı¼ºµÉ ¶§ ÀÚµ¿À¸·Î È£ÃâµÇ¾î ¼ºÁú ºÎ¿©½ÃÄÑÁÜ
-- °´Ã¼³»ÀÇ ¸Ş¼Òµå¸¦ »ı¼ºÇÒ ¶§ `def example(self):`¿Í °°ÀÌ `self`¸¦ ÇÊÈ÷ ³Ö¾î¾ßÇÑ´Ù.
-> »ó¼Ó
+- ` __init__` : ì´ˆê¸°í™” ë©”ì†Œë“œ, ê°ì²´ê°€ ìƒì„±ë  ë•Œ ìë™ìœ¼ë¡œ í˜¸ì¶œë˜ì–´ ì„±ì§ˆ ë¶€ì—¬ì‹œì¼œì¤Œ
+- ê°ì²´ë‚´ì˜ ë©”ì†Œë“œë¥¼ ìƒì„±í•  ë•Œ `def example(self):`ì™€ ê°™ì´ `self`ë¥¼ í•„íˆ ë„£ì–´ì•¼í•œë‹¤.
+> ìƒì†
 ```python
 class AttackUnit(Unit):
 
@@ -381,62 +381,62 @@ class AttackUnit(Unit):
         Unit.__init__(self, name, hp, speed)
         self.damage = damage 
 ``` 
--  **Unit class**ÀÇ ³»¿ëÀ» »ó¼Ó ¹ŞÀ½.
--  »ó¼Ó¹ŞÀ» Å¬·¡½ºÀÇ ÀÌ¸§À» `class AttackUnit(Unit)`¿Í °°ÀÌ () ¾È¿¡ ÀÛ¼º
-> ´ÙÁß »ó¼Ó
+-  **Unit class**ì˜ ë‚´ìš©ì„ ìƒì† ë°›ìŒ.
+-  ìƒì†ë°›ì„ í´ë˜ìŠ¤ì˜ ì´ë¦„ì„ `class AttackUnit(Unit)`ì™€ ê°™ì´ () ì•ˆì— ì‘ì„±
+> ë‹¤ì¤‘ ìƒì†
 ```python
-class FlyableAttackUnit(AttackUnit, Flyable): # ´ÙÁß »ó¼Ó : ºÎ¸ğ Å¬·¡½º¸¦ 2°³ ÀÌ»ó »ó¼Ó
+class FlyableAttackUnit(AttackUnit, Flyable): # ë‹¤ì¤‘ ìƒì† : ë¶€ëª¨ í´ë˜ìŠ¤ë¥¼ 2ê°œ ì´ìƒ ìƒì†
     
     def __init__(self, name, hp, damage, flying_speed):
-        AttackUnit.__init__(self, name, hp, 0, damage) # Áö»ó speed 0 
+        AttackUnit.__init__(self, name, hp, 0, damage) # ì§€ìƒ speed 0 
         Flyable.__init__(self, flying_speed)
 
-    def move(self, location): # ¸Ş¼Òµå ¿À¹ö¶óÀÌµù (ÀçÁ¤ÀÇ)
-        print("[°øÁß À¯´Ö ÀÌµ¿]")
+    def move(self, location): # ë©”ì†Œë“œ ì˜¤ë²„ë¼ì´ë”© (ì¬ì •ì˜)
+        print("[ê³µì¤‘ ìœ ë‹› ì´ë™]")
         self.fly(self.name, location)
 ```
-- ¸Ş¼Òµå ¿À¹ö¶óÀÌµù :  `fly` ¿Í `move` ÇÏ³ªÀÇ ¿òÁ÷ÀÌ´Â µ¿ÀÛÀÌ¹Ç·Î °°Àº ÀÇ¹Ì¸¦ °¡Áø´Ù.
-µû¶ó¼­ `fly`¿Í `move` ÇÔ¼ö¸¦ ÇÏ³ª·Î ÅëÀÏ
-- `FlyableAttackUnit` Å¬·¡½º¿¡¼­´Â `move`·Î ÀÌ¿ëÇÏ±â À§ÇØ `self.fly()`·Î ÇÔ¼ö ÀçÁ¤ÀÇ
+- ë©”ì†Œë“œ ì˜¤ë²„ë¼ì´ë”© :  `fly` ì™€ `move` í•˜ë‚˜ì˜ ì›€ì§ì´ëŠ” ë™ì‘ì´ë¯€ë¡œ ê°™ì€ ì˜ë¯¸ë¥¼ ê°€ì§„ë‹¤.
+ë”°ë¼ì„œ `fly`ì™€ `move` í•¨ìˆ˜ë¥¼ í•˜ë‚˜ë¡œ í†µì¼
+- `FlyableAttackUnit` í´ë˜ìŠ¤ì—ì„œëŠ” `move`ë¡œ ì´ìš©í•˜ê¸° ìœ„í•´ `self.fly()`ë¡œ í•¨ìˆ˜ ì¬ì •ì˜
 
 ## - __02.27__ -
 > **<h3>Except Handling</h3>**
 ```python
 try:
-    print("[ÇÑ ÀÚ¸® ³ª´©±â Àü¿ë °è»ê±â]")
+    print("[í•œ ìë¦¬ ë‚˜ëˆ„ê¸° ì „ìš© ê³„ì‚°ê¸°]")
     num = [] # empty list 
-    num.append(int(input("Ã¹¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ")))
-    num.append(int(input("µÎ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ")))
+    num.append(int(input("ì²«ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ")))
+    num.append(int(input("ë‘ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ")))
     num.append(int(num[0] / num[1]))
     print("{0} / {1} = {2}".format(num[0], num[1], num[4] ))
 except ValueError:
-    print("Error! Àß¸øµÈ °ªÀ» ÀÔ·ÂÇÏ¿´½À´Ï´Ù.")
+    print("Error! ì˜ëª»ëœ ê°’ì„ ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.")
 except ZeroDivisionError as err:
     print(err)
 except Exception as err:
-    print("Error! ¾Ë ¼ö ¾ø´Â ¿¡·¯ ¹ß»ı.")
+    print("Error! ì•Œ ìˆ˜ ì—†ëŠ” ì—ëŸ¬ ë°œìƒ.")
     print(err)
 ```
-- µğ¹ö±ë Áß ¹ß»ıÇÒ ¼ö ÀÖ´Â ¿À·ù¸¦ ¿¹¿ÜÃ³¸®
-- `except ValueError`¿Í `except ZeroDivisionError`Ã³·³ ÇØ´ç ¿À·ù¸¸ ¿¹¿ÜÀûÀ¸·Î Ã³¸®ÇÒ ¼ö ÀÖ´Ù.
-- ±× ¿Ü¿¡ ¿À·ù´Â `except:`·Î ÀÏ°ıÀûÀ¸·Î Ã³¸®
-- ±× ¿Ü¿¡ ¿À·ù°¡ ¹«¾ùÀÎÁö ¾Ë·Á¸é `except Exception as ...`À» ÀÌ¿ë
-- `ZeroDivisionError`ÀÇ ³»¿ëÀ» `as err`·Î `err`¶ó´Â º¯¼öÃ³·³ ÀÌ¿ëÇÒ ¼ö ÀÖ´Ù.
+- ë””ë²„ê¹… ì¤‘ ë°œìƒí•  ìˆ˜ ìˆëŠ” ì˜¤ë¥˜ë¥¼ ì˜ˆì™¸ì²˜ë¦¬
+- `except ValueError`ì™€ `except ZeroDivisionError`ì²˜ëŸ¼ í•´ë‹¹ ì˜¤ë¥˜ë§Œ ì˜ˆì™¸ì ìœ¼ë¡œ ì²˜ë¦¬í•  ìˆ˜ ìˆë‹¤.
+- ê·¸ ì™¸ì— ì˜¤ë¥˜ëŠ” `except:`ë¡œ ì¼ê´„ì ìœ¼ë¡œ ì²˜ë¦¬
+- ê·¸ ì™¸ì— ì˜¤ë¥˜ê°€ ë¬´ì—‡ì¸ì§€ ì•Œë ¤ë©´ `except Exception as ...`ì„ ì´ìš©
+- `ZeroDivisionError`ì˜ ë‚´ìš©ì„ `as err`ë¡œ `err`ë¼ëŠ” ë³€ìˆ˜ì²˜ëŸ¼ ì´ìš©í•  ìˆ˜ ìˆë‹¤.
 
 ```python
 try:
-    print("[µÎ ÀÚ¸® ³ª´©±â Àü¿ë °è»ê±â]")
+    print("[ë‘ ìë¦¬ ë‚˜ëˆ„ê¸° ì „ìš© ê³„ì‚°ê¸°]")
     num = [] # empty list 
-    num.append(int(input("Ã¹¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ")))
-    num.append(int(input("µÎ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ")))
+    num.append(int(input("ì²«ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ")))
+    num.append(int(input("ë‘ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ")))
     num.append(int(num[0] / num[1]))
     if not(100 > num[0] > 10) or not(100 > num[1] > 10):
         raise ValueError
     print("{0} / {1} = {2}".format(num[0], num[1], num[2]))
 except ValueError:
-    print("Error! Àß¸øµÈ °ªÀ» ÀÔ·ÂÇÏ¿´½À´Ï´Ù.")
+    print("Error! ì˜ëª»ëœ ê°’ì„ ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.")
 ```
-- `raise`¸¦ ÀÌ¿ëÇØ °­Á¦·Î ¿À·ù¸¦ ¹ß»ı½ÃÄÑ Ã³¸®ÇÒ ¼ö ÀÖ´Ù.
+- `raise`ë¥¼ ì´ìš©í•´ ê°•ì œë¡œ ì˜¤ë¥˜ë¥¼ ë°œìƒì‹œì¼œ ì²˜ë¦¬í•  ìˆ˜ ìˆë‹¤.
 
 ```python
 class BigNumError(Exception):
@@ -447,72 +447,72 @@ class BigNumError(Exception):
         return self.msg
 
 try:
-    print("[ÇÑ ÀÚ¸® ³ª´©±â Àü¿ë °è»ê±â]")
+    print("[í•œ ìë¦¬ ë‚˜ëˆ„ê¸° ì „ìš© ê³„ì‚°ê¸°]")
     num = [] # empty list 
-    num.append(int(input("Ã¹¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ")))
-    num.append(int(input("µÎ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ")))
+    num.append(int(input("ì²«ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ")))
+    num.append(int(input("ë‘ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ")))
     num.append(int(num[0] / num[1]))
     if num[0] > 10 or num[1] > 10:
-        raise BigNumError("ÀÔ·Â°ª : {0}    {1}".format(num[0],num[1]))
+        raise BigNumError("ì…ë ¥ê°’ : {0}    {1}".format(num[0],num[1]))
     print("{0} / {1} = {2}".format(num[0], num[1], num[2]))
 except BigNumError as err:
-    print("Error! Àß¸øµÈ °ªÀ» ÀÔ·ÂÇÏ¿´½À´Ï´Ù.")
+    print("Error! ì˜ëª»ëœ ê°’ì„ ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.")
     print(err)
 finally:
-    print("½ÇÇàÀ» Á¾·áÇÕ´Ï´Ù.")
+    print("ì‹¤í–‰ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.")
 ```
-- »ç¿ëÀÚ Á¤ÀÇ ¿¹¿ÜÃ³¸® : Á¤ÇØÁø °ÍÀÌ ¾Æ´Ñ »ç¿ëÀÚ°¡ Á÷Á¢ ¿À·ù¸¦ ¿¹¿ÜÃ³¸®ÇÏ¿© »ç¿ë
-- `raise`¸¦ ÅëÇØ ¿øÇÏ´Â ¿¹¿Ü¸¦ ºÒ·¯¿È
-- `class BigNumError(Exception)`·Î ¿øÇÏ´Â ¿¹¿Ü¸¦ Á¤ÀÇ
-- `BigNumError()`¸¦ ÅëÇØ ¿øÇÏ´Â ¸Ş¼¼Áö ÀüÈ¯
-- `def __str__`Å¬·¡½º ÀÚÃ¼ÀÇ ³»¿ëÀ» Ãâ·ÂÇÏ°í ½ÍÀ» ¶§(`__init__`¿¡¼­ ±ÔÁ¤ÇÑ) Çü½ÄÀ» ÁöÁ¤ÇÏ´Â ¸Ş¼­µå
-- `finally:`¸¦ ÅëÇØ `try`±¸¹® Á¾·á½Ã ¹«Á¶°Ç ½ÇÇà
+- ì‚¬ìš©ì ì •ì˜ ì˜ˆì™¸ì²˜ë¦¬ : ì •í•´ì§„ ê²ƒì´ ì•„ë‹Œ ì‚¬ìš©ìê°€ ì§ì ‘ ì˜¤ë¥˜ë¥¼ ì˜ˆì™¸ì²˜ë¦¬í•˜ì—¬ ì‚¬ìš©
+- `raise`ë¥¼ í†µí•´ ì›í•˜ëŠ” ì˜ˆì™¸ë¥¼ ë¶ˆëŸ¬ì˜´
+- `class BigNumError(Exception)`ë¡œ ì›í•˜ëŠ” ì˜ˆì™¸ë¥¼ ì •ì˜
+- `BigNumError()`ë¥¼ í†µí•´ ì›í•˜ëŠ” ë©”ì„¸ì§€ ì „í™˜
+- `def __str__`í´ë˜ìŠ¤ ìì²´ì˜ ë‚´ìš©ì„ ì¶œë ¥í•˜ê³  ì‹¶ì„ ë•Œ(`__init__`ì—ì„œ ê·œì •í•œ) í˜•ì‹ì„ ì§€ì •í•˜ëŠ” ë©”ì„œë“œ
+- `finally:`ë¥¼ í†µí•´ `try`êµ¬ë¬¸ ì¢…ë£Œì‹œ ë¬´ì¡°ê±´ ì‹¤í–‰
 
 ## - __03.03__ -
 > **<h3>User Module</h3>**
 ```python
 # module_test.py
-# ÀÏ¹İ °¡°İ
+# ì¼ë°˜ ê°€ê²©
 def price(people):
-    print("{0}¸í °¡°İÀº {1}¿ø ÀÔ´Ï´Ù.".format(people, people * 10000))
-# Á¶Á¶ ÇÒÀÎ °¡°İ
+    print("{0}ëª… ê°€ê²©ì€ {1}ì› ì…ë‹ˆë‹¤.".format(people, people * 10000))
+# ì¡°ì¡° í• ì¸ ê°€ê²©
 def price_morning(people):
-    print("{0}¸í °¡°İÀº {1}¿ø ÀÔ´Ï´Ù.".format(people, people * 6000))
-# ±ºÀÎ ÇÒÀÎ °¡°İ
+    print("{0}ëª… ê°€ê²©ì€ {1}ì› ì…ë‹ˆë‹¤.".format(people, people * 6000))
+# êµ°ì¸ í• ì¸ ê°€ê²©
 def price_soldier(people):
-    print("{0}¸í °¡°İÀº {1}¿ø ÀÔ´Ï´Ù.".format(people, people * 5000))
+    print("{0}ëª… ê°€ê²©ì€ {1}ì› ì…ë‹ˆë‹¤.".format(people, people * 5000))
 ```
-- ´Ù¸¥ ÆÄÀÏ¿¡¼­ ÀÌ¿ë ÇÒ ¸¸ÇÑ ÇÔ¼ö¸¦ Á¤ÀÇ
+- ë‹¤ë¥¸ íŒŒì¼ì—ì„œ ì´ìš© í•  ë§Œí•œ í•¨ìˆ˜ë¥¼ ì •ì˜
 ```python
 import module_test
-module_test.price(3) # 3¸íÀÇ ¿µÈ­ °¡°İ
-module_test.price_morning(4) # 4¸íÀÇ Á¶Á¶ ÇÒÀÎ °¡°İ
-module_test.price_soldier(7) # 7¸íÀÇ ±ºÀÎ ÇÒÀÎ °¡°İ
+module_test.price(3) # 3ëª…ì˜ ì˜í™” ê°€ê²©
+module_test.price_morning(4) # 4ëª…ì˜ ì¡°ì¡° í• ì¸ ê°€ê²©
+module_test.price_soldier(7) # 7ëª…ì˜ êµ°ì¸ í• ì¸ ê°€ê²©
 
 print("")
 
 import module_test as movie
-movie.price(3) # 3¸íÀÇ ¿µÈ­ °¡°İ
-movie.price_morning(4) # 4¸íÀÇ Á¶Á¶ ÇÒÀÎ °¡°İ
-movie.price_soldier(7) # 7¸íÀÇ ±ºÀÎ ÇÒÀÎ °¡°İ
+movie.price(3) # 3ëª…ì˜ ì˜í™” ê°€ê²©
+movie.price_morning(4) # 4ëª…ì˜ ì¡°ì¡° í• ì¸ ê°€ê²©
+movie.price_soldier(7) # 7ëª…ì˜ êµ°ì¸ í• ì¸ ê°€ê²©
 
 print("")
 
 from module_test import *
-price(3) # 3¸íÀÇ ¿µÈ­ °¡°İ
-price_morning(4) # 4¸íÀÇ Á¶Á¶ ÇÒÀÎ °¡°İ
-price_soldier(7) # 7¸íÀÇ ±ºÀÎ ÇÒÀÎ °¡°İ
+price(3) # 3ëª…ì˜ ì˜í™” ê°€ê²©
+price_morning(4) # 4ëª…ì˜ ì¡°ì¡° í• ì¸ ê°€ê²©
+price_soldier(7) # 7ëª…ì˜ êµ°ì¸ í• ì¸ ê°€ê²©
 
 print("")
 
 from module_test import price, price_morning
 price(3)
 price_morning(4)
-# price_soldier(7) »ç¿ëºÒ°¡
+# price_soldier(7) ì‚¬ìš©ë¶ˆê°€
 ```
-- `from` `import`¸¦ ÀÌ¿ëÇÏ¿© module_test.pyÀÇ ÇÔ¼ö¸¦ È°¿ë
-- `import ... as ...`¸¦ ÀÌ¿ëÇÏ¿© ÀÌ¸§À» ÀçÁ¤ÀÇÇØ Æí¸®ÇÏ°Ô ÀÌ¿ë
-- `from ... import *` ...³»ÀÇ ¸ğµç ÇÔ¼ö¸¦ È°¿ë
+- `from` `import`ë¥¼ ì´ìš©í•˜ì—¬ module_test.pyì˜ í•¨ìˆ˜ë¥¼ í™œìš©
+- `import ... as ...`ë¥¼ ì´ìš©í•˜ì—¬ ì´ë¦„ì„ ì¬ì •ì˜í•´ í¸ë¦¬í•˜ê²Œ ì´ìš©
+- `from ... import *` ...ë‚´ì˜ ëª¨ë“  í•¨ìˆ˜ë¥¼ í™œìš©
 
 ## - __03.04__ -
 > **<h3>Package</h3>**
@@ -520,14 +520,14 @@ price_morning(4)
 # ThailandPackage
 class ThailandPackage:
     def detail(self):
-        print("[ÅÂ±¹ ÆĞÅ°Áö 3¹Ú 5ÀÏ] : 50¸¸¿ø")
+        print("[íƒœêµ­ íŒ¨í‚¤ì§€ 3ë°• 5ì¼] : 50ë§Œì›")
 
 # VietnamPackage
 class VietnamPackage:
     def detail(self):
-        print("[º£Æ®³² ÆĞÅ°Áö 3¹Ú 5ÀÏ] : 60¸¸¿ø")
+        print("[ë² íŠ¸ë‚¨ íŒ¨í‚¤ì§€ 3ë°• 5ì¼] : 60ë§Œì›")
 
-# ½ÇÇàÇÒ package.py
+# ì‹¤í–‰í•  package.py
 
 import travel_package.thailand
 trip_to = travel_package.thailand.ThailandPackage()
@@ -541,22 +541,27 @@ from travel_package import vietnam
 trip_to = vietnam.VietnamPackage()
 trip_to.detail()
 ```
-- `import` ½Ã Æú´õÀÌ¸§.ÆÄÀÏ¸íÀ¸·Î ÆĞÅ°Áö¸¦ ºÒ·¯ »ç¿ë°¡´ÉÇÏÁö¸¸, ÆÄÀÏ³»ÀÇ class¸íÀÌ³ª ÇÔ¼ö¸íÀ» Á÷Á¢ ºÎ¸¦¼ø ¾ø´Ù.
-- `from ... import ...` ±¸¹®Àº ÆÄÀÏ³»ÀÇ class¸íÀÌ³ª ÇÔ¼ö¸íÀ» Á÷Á¢ ºÎ¸¦¼ø ÀÖ´Ù.
+- `import` ì‹œ í´ë”ì´ë¦„.íŒŒì¼ëª…ìœ¼ë¡œ íŒ¨í‚¤ì§€ë¥¼ ë¶ˆëŸ¬ ì‚¬ìš©ê°€ëŠ¥í•˜ì§€ë§Œ, íŒŒì¼ë‚´ì˜ classëª…ì´ë‚˜ í•¨ìˆ˜ëª…ì„ ì§ì ‘ ë¶€ë¥¼ìˆœ ì—†ë‹¤.
+- `from ... import ...` êµ¬ë¬¸ì€ íŒŒì¼ë‚´ì˜ classëª…ì´ë‚˜ í•¨ìˆ˜ëª…ì„ ì§ì ‘ ë¶€ë¥¼ìˆœ ìˆë‹¤.
 ```python
-# ¿ÜºÎ¿¡¼­ ¸ğµâ »ç¿ëÇÏ´Â °ÍÀÎÁö ¾Ë¾Æº¸´Â ¿©ºÎ
+# __init__.py
+__all__ = ["vietnam","thailand"]
+```
+- `from ... import *` êµ¬ë¬¸ì—ì„œ ì–´ëŠ ëª¨ë“ˆì„ ì‚¬ìš©í•  ì§€ `__all__ =` ë¥¼ í†µí•´  __`__init__.py`__ íŒŒì¼ë¡œ ì •ì˜í•´ì¤˜ì•¼í•œë‹¤.
+```python
+# ì™¸ë¶€ì—ì„œ ëª¨ë“ˆ ì‚¬ìš©í•˜ëŠ” ê²ƒì¸ì§€ ì•Œì•„ë³´ëŠ” ì—¬ë¶€
 # Thailand.py
 class ThailandPackage:
     def detail(self):
-        print("[ÅÂ±¹ ÆĞÅ°Áö 3¹Ú 5ÀÏ] : 50¸¸¿ø")
+        print("[íƒœêµ­ íŒ¨í‚¤ì§€ 3ë°• 5ì¼] : 50ë§Œì›")
 
 if __name__ == "__main__":
-    print("Thailand ¸ğµâ Á÷Á¢ ½ÇÇà")
-    print("ÀÌ ¹®ÀåÀº ¸ğµâÀ» Á÷Á¢ ½ÇÇàÇÒ ‹š¸¸ ½ÇÇà")
+    print("Thailand ëª¨ë“ˆ ì§ì ‘ ì‹¤í–‰")
+    print("ì´ ë¬¸ì¥ì€ ëª¨ë“ˆì„ ì§ì ‘ ì‹¤í–‰í•  Â‹Âšë§Œ ì‹¤í–‰")
     trip_to = ThailandPackage()
     trip_to.detail()
 else:
-    print("Thailand ¿ÜºÎ¿¡¼­ ¸ğµâ È£Ãâ")
+    print("Thailand ì™¸ë¶€ì—ì„œ ëª¨ë“ˆ í˜¸ì¶œ")
 ```
-- `if __name__ : "__main__"` »ç¿ëÀÚ°¡ `__main__`ÀÎÁö ¿©ºÎ È®ÀÎ
-- ¿ÜºÎ¿¡¼­ ¸ğµâ È£Ãâ½Ã `else`±¸¹® È£Ãâ
+- `if __name__ : "__main__"` ì‚¬ìš©ìê°€ `__main__`ì¸ì§€ ì—¬ë¶€ í™•ì¸
+- ì™¸ë¶€ì—ì„œ ëª¨ë“ˆ í˜¸ì¶œì‹œ `else`êµ¬ë¬¸ í˜¸ì¶œ

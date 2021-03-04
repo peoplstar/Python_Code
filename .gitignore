@@ -4,3 +4,8 @@ test.py
 
 score.txt
 study.txt
+travel_package/__pycache__/__init__.cpython-39.pyc
+travel_package/__pycache__/thailand.cpython-39.pyc
+travel_package/__pycache__/__init__.cpython-39.pyc
+travel_package/__pycache__/vietnam.cpython-39.pyc
+*.pyc

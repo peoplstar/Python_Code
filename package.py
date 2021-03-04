@@ -14,6 +14,3 @@ trip_to.detail()
 from travel_package import *
 trip_to = vietnam.VietnamPackage()
 trip_to.detail()
-
-trip_2 = thailand.ThailandPackage()
-trip_2.detail()
