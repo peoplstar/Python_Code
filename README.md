@@ -513,3 +513,50 @@ price_morning(4)
 - `from` `import`를 이용하여 module_test.py의 함수를 활용
 - `import ... as ...`를 이용하여 이름을 재정의해 편리하게 이용
 - `from ... import *` ...내의 모든 함수를 활용
+
+## - __03.04__ -
+> **<h3>Package</h3>**
+```python
+# ThailandPackage
+class ThailandPackage:
+    def detail(self):
+        print("[태국 패키지 3박 5일] : 50만원")
+
+# VietnamPackage
+class VietnamPackage:
+    def detail(self):
+        print("[베트남 패키지 3박 5일] : 60만원")
+
+# 실행할 package.py
+
+import travel_package.thailand
+trip_to = travel_package.thailand.ThailandPackage()
+trip_to.detail()
+
+from travel_package.vietnam import VietnamPackage 
+trip_to = VietnamPackage()
+trip_to.detail()
+
+from travel_package import vietnam 
+trip_to = vietnam.VietnamPackage()
+trip_to.detail()
+```
+- `import` 시 폴더이름.파일명으로 패키지를 불러 사용가능하지만, 파일내의 class명이나 함수명을 직접 부를순 없다.
+- `from ... import ...` 구문은 파일내의 class명이나 함수명을 직접 부를순 있다.
+```python
+# 외부에서 모듈 사용하는 것인지 알아보는 여부
+# Thailand.py
+class ThailandPackage:
+    def detail(self):
+        print("[태국 패키지 3박 5일] : 50만원")
+
+if __name__ == "__main__":
+    print("Thailand 모듈 직접 실행")
+    print("이 문장은 모듈을 직접 실행할 떄만 실행")
+    trip_to = ThailandPackage()
+    trip_to.detail()
+else:
+    print("Thailand 외부에서 모듈 호출")
+```
+- `if __name__ : "__main__"` 사용자가 `__main__`인지 여부 확인
+- 외부에서 모듈 호출시 `else`구문 호출
