@@ -565,3 +565,7 @@ else:
 ```
 - `if __name__ : "__main__"` 사용자가 `__main__`인지 여부 확인
 - 외부에서 모듈 호출시 `else`구문 호출
+## - __04.20__ -
+> **<h3>PyInstaller</h3>**
+
+`pip install pyinstaller`를 통해 쉽게 exe 파일로 변환이 가능하다. 만약 `installtest.py`를 exe로 만들고자 하면 터미널 창에 `pyinstaller .\installtest.py` 하면 build , dist 디렉터리가 생기는데 dist 내부에 installtest.exe가 생성된다.
