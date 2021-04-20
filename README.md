@@ -582,3 +582,4 @@ def resource_path(relative_path):
 
 // 사용될 이미지 파일 앞에 resource_path(이미지 경로)를 넣는다.
 ```
+또한, pyinstaller 할 때 이미지 파일을 명시적으로 추가해줘야한다. `pyinstaller -w  --add-data '추가할 파일;어느 위치에 넣을지' -F .\____.py`
