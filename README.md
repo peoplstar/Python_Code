@@ -568,4 +568,4 @@ else:
 ## - __04.20__ -
 > **<h3>PyInstaller</h3>**
 
-`pip install pyinstaller`를 통해 쉽게 exe 파일로 변환이 가능하다. 만약 `installtest.py`를 exe로 만들고자 하면 터미널 창에 `pyinstaller .\installtest.py` 하면 build , dist 디렉터리가 생기는데 dist 내부에 installtest.exe가 생성된다.
+`pip install pyinstaller`를 통해 쉽게 exe 파일로 변환이 가능하다. 만약 `installtest.py`를 exe로 만들고자 하면 터미널 창에 `pyinstaller .\installtest.py` 하면 build , dist 디렉터리가 생기는데 dist 내부에 installtest.exe가 생성된다.   build, dist 내부에 다른 파일 없이 하나의 .exe 파일로 만들고 싶다면 `pyinstaller -F .\installtest.py`하면 exe 파일 하나만 생성된다. 우린 생성된 이 파일은 cmd에서 직접 입력해서 열어볼 수 밖에 없다. 만약 Graphics User Interface가 있는 파일을 응용 프로그램으로 바꿀 때는 `pyinstaller -w -F .\installtest.py` 와 같이 `-w` windows 버젼 옵션을 붙이면 된다.[installtest_image]   
