@@ -107,8 +107,16 @@ num_list.sort()
 num_list.reverse()
 del num_list[2]
 num_list.index(5)
-```
-### - __임의의 개수의 정수를 한줄에 입력받아 리스트에 저장할 때__ -
+```  
+
+`.append("temp")` : temp 값을 마지막 인덱스에 추가   
+`.insert(1,"temp")` : 인덱스 1 인 위치에 temp 값 대입 <mark> &</mark> 그 이후 값은 모두 한자리씩 밀려남   
+`.sort()` : 오름차순으로 정렬   
+`.reverse()` : 리스트의 내부를 역순으로 뒤집음 
+`del num_list[2]` : 인덱스가 2인 부분의 값을 삭제   
+`.index(5)` : 리스트에 해당 값이 있으면 위치 값을 출력 <mark>&</mark> 없으면 ValueError  
+
+> **<h3>임의의 개수의 정수를 한줄에 입력받아 리스트에 저장할 때</h3>**
 ```python
 import sys
 data = list(map(int,sys.stdin.readline().split()))   
@@ -117,14 +125,7 @@ data = list(map(int,sys.stdin.readline().split()))
 - 괄호 안에 특정 값을 넣어주면 그 값을 기준으로 문자열을 나누고, 아무 값도 넣어주지 않으면 공백(스페이스, 탭, 엔터 등)을 기준으로 나눕니다.
 
 - list()는 자료형을 리스트형으로 변환해주는 함수입니다.
-- map()은 맵 객체를 만들기 때문에, 리스트형으로 바꿔주기 위해서 list()로 감싼다.   
-
-`.append("temp")` : temp 값을 마지막 인덱스에 추가   
-`.insert(1,"temp")` : 인덱스 1 인 위치에 temp 값 대입 <mark> &</mark> 그 이후 값은 모두 한자리씩 밀려남   
-`.sort()` : 오름차순으로 정렬   
-`.reverse()` : 리스트의 내부를 역순으로 뒤집음 
-`del num_list[2]` : 인덱스가 2인 부분의 값을 삭제   
-`.index(5)` : 리스트에 해당 값이 있으면 위치 값을 출력 <mark>&</mark> 없으면 ValueError
+- map()은 맵 객체를 만들기 때문에, 리스트형으로 바꿔주기 위해서 list()로 감싼다. 
 
 > **<h3> Dictionary</h3>** 
 ```python
